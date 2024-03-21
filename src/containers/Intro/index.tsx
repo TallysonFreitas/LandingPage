@@ -3,7 +3,7 @@ const Intro = () => {
     <section>
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-md-6">
+          <div className="col-md-6 d-flex flex-column text-center">
             <h2 className="fw-bold fs-1">
               Build a client
               <span className="text-primary"> portal custom</span>, in minutes
