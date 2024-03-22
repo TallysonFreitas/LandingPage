@@ -1,6 +1,6 @@
 import Header from './containers/Header'
 import Intro from './containers/Intro'
-import Trusted from './containers/Trusted'
+import Trusted from './containers/Projetos'
 
 function App() {
   return (
