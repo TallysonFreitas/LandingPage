@@ -1,10 +1,10 @@
 const Header = () => {
   return (
     <header className="fixed-top">
-      <nav className="navbar navbar-expand-lg bg-body-secondary">
+      <nav className="navbar navbar-expand-lg bg-white">
         <div className="container">
           {/* Brand */}
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand fw-semibold fs-4" href="#">
             <i className="bi bi-code"></i> Tallyson.dev{' '}
             <i className="bi bi-code-slash"></i>
           </a>
@@ -27,24 +27,24 @@ const Header = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="#" className="nav-link active fw-semibold">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="#" className="nav-link fw-semibold">
                   Projetos
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="#" className="nav-link fw-semibold">
                   Contato
                 </a>
               </li>
-              <button className="btn btn-outline-primary m-2 my-lg-0">
+              <button className="btn btn-outline-primary m-2 my-lg-0 fw-semibold">
                 Login
               </button>
-              <button className="btn btn-primary m-2 my-lg-0">
+              <button className="btn btn-primary m-2 my-lg-0 fw-semibold">
                 Sign up for free
               </button>
             </ul>
