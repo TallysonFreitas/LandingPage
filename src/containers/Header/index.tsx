@@ -44,7 +44,7 @@ const Header = () => {
               <button className="btn btn-outline-primary m-2 my-lg-0 fw-semibold">
                 Login
               </button>
-              <button className="btn btn-primary m-2 my-lg-0 fw-semibold">
+              <button className="btn btn-warning m-2 my-lg-0 fw-semibold">
                 Sign up for free
               </button>
             </ul>
