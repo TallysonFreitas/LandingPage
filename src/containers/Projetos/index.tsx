@@ -91,6 +91,9 @@ const Projetos = () => {
                         Repository
                       </a>
                     </div>
+                    <small className="mt-2 d-block fw-semibold text-muted">
+                      <time dateTime="2024-29-02">29, February, 2024</time>
+                    </small>
                   </div>
                   <div className="col-lg-6">
                     {/* Carousel */}
@@ -167,6 +170,101 @@ const Projetos = () => {
                     </div>
                   </div>
                 </div>
+                {/* Acordion */}
+                <div className="row mt-2">
+                  <div className="col">
+                    <div
+                      className="accordion accordion-flush"
+                      id="accordionwebmotorsparent"
+                    >
+                      {/* Accordion Item */}
+                      <div className="accordion-item">
+                        <h2 className="accordion-header">
+                          <button
+                            className="accordion-button collapsed fw-semibold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordiontecnologies"
+                            aria-expanded="false"
+                            aria-controls="accordiontecnologies"
+                          >
+                            <i className="bi bi-file-code me-2"></i>Main
+                            technologies
+                          </button>
+                        </h2>
+                        <div
+                          id="accordiontecnologies"
+                          className="accordion-collapse collapse"
+                          data-bs-parent="#accordionwebmotorsparent"
+                        >
+                          <div className="accordion-body">
+                            <ul className="d-flex column-gap-5 fw-semibold flex-wrap">
+                              <li>
+                                <i className="bi bi-filetype-jsx"></i> React.js
+                              </li>
+                              <li>
+                                <i className="bi bi-filetype-tsx"></i>{' '}
+                                TypeScript
+                              </li>
+                              <li>
+                                <i className="bi bi-filetype-scss"></i> Styled
+                                Components
+                              </li>
+                              <li>
+                                <i className="bi bi-archive"></i> Redux.js
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Accordion Item */}
+                      <div className="accordion-item">
+                        <h2 className="accordion-header">
+                          <button
+                            className="accordion-button collapsed fw-semibold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordionchallenges"
+                            aria-expanded="false"
+                            aria-controls="accordionchallenges"
+                          >
+                            <i className="bi bi-file-code me-2"></i>Challenges
+                          </button>
+                        </h2>
+                        <div
+                          id="accordionchallenges"
+                          className="accordion-collapse collapse"
+                          data-bs-parent="#accordionwebmotorsparent"
+                        >
+                          <div className="accordion-body">
+                            <ol>
+                              <li>
+                                Using and handling data through the{' '}
+                                <span className="text-danger">
+                                  Fetch function
+                                </span>
+                                , which I knew very little about. I managed,{' '}
+                                <span className="text-danger">
+                                  only by studying a lot
+                                </span>
+                                , to learn how to use it to retrieve data coming
+                                from the link headers and use it to render the
+                                correct sales page for each car.
+                              </li>
+                              <li>
+                                Creating responsiveness without any assistance
+                                was a big challenge, since with each new
+                                implementation I had to test each version of the
+                                site in order to discover new instabilities.
+                              </li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -185,9 +283,9 @@ const Projetos = () => {
                       <span className="text-success fw-bold">Login Page</span>
                     </h2>
                     <p className="lead text-muted fw-semibold my-3">
-                      Explore our extensive collection of top-tier vehicles and
-                      discover the perfect ride for you at our online car
-                      dealership today. Browse now and experience excellence!
+                      Explore our website and experience seamless access with
+                      our login feature. Join us to unlock exclusive content and
+                      personalized experiences!
                     </p>
 
                     <div className="d-flex justify-content-center column-gap-3">
@@ -201,6 +299,9 @@ const Projetos = () => {
                         Repository
                       </a>
                     </div>
+                    <small className="mt-2 d-block fw-semibold text-muted">
+                      <time dateTime="2023-02-11">11, November, 2023</time>
+                    </small>
                   </div>
                   <div className="col-lg-6">
                     {/* Carousel */}
@@ -277,6 +378,98 @@ const Projetos = () => {
                     </div>
                   </div>
                 </div>
+                {/* Acordion */}
+                <div className="row mt-2">
+                  <div className="col">
+                    <div
+                      className="accordion accordion-flush"
+                      id="accordionloginparent"
+                    >
+                      {/* Accordion Item */}
+                      <div className="accordion-item">
+                        <h2 className="accordion-header">
+                          <button
+                            className="accordion-button collapsed fw-semibold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordiontecnologies"
+                            aria-expanded="false"
+                            aria-controls="accordiontecnologies"
+                          >
+                            <i className="bi bi-file-code me-2"></i>Main
+                            technologies
+                          </button>
+                        </h2>
+                        <div
+                          id="accordiontecnologies"
+                          className="accordion-collapse collapse"
+                          data-bs-parent="#accordionloginparent"
+                        >
+                          <div className="accordion-body">
+                            <ul className="d-flex column-gap-5 fw-semibold flex-wrap">
+                              <li>
+                                <i className="bi bi-filetype-jsx"></i> React.js
+                              </li>
+                              <li>
+                                <i className="bi bi-filetype-tsx"></i>{' '}
+                                TypeScript
+                              </li>
+                              <li>
+                                <i className="bi bi-filetype-scss"></i> Styled
+                                Components
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Accordion Item */}
+                      <div className="accordion-item">
+                        <h2 className="accordion-header">
+                          <button
+                            className="accordion-button collapsed fw-semibold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordionchallenges"
+                            aria-expanded="false"
+                            aria-controls="accordionchallenges"
+                          >
+                            <i className="bi bi-file-code me-2"></i>Challenges
+                          </button>
+                        </h2>
+                        <div
+                          id="accordionchallenges"
+                          className="accordion-collapse collapse"
+                          data-bs-parent="#accordionloginparent"
+                        >
+                          <div className="accordion-body">
+                            <ol>
+                              <li>
+                                While still learning about{' '}
+                                <span className="text-success">
+                                  styled components
+                                </span>
+                                , I had many problems integrating it with
+                                typescript, problems that I had to learn to
+                                solve on my own.
+                              </li>
+                              <li>
+                                Creating{' '}
+                                <span className="text-success">
+                                  responsiveness
+                                </span>{' '}
+                                without any assistance was a big challenge,
+                                since with each new implementation I had to test
+                                each version of the site in order to discover
+                                new instabilities.
+                              </li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -295,9 +488,9 @@ const Projetos = () => {
                       <span className="text-primary fw-bold">To Do App</span>
                     </h2>
                     <p className="lead text-muted fw-semibold my-3">
-                      Explore our extensive collection of top-tier vehicles and
-                      discover the perfect ride for you at our online car
-                      dealership today. Browse now and experience excellence!
+                      Discover efficiency with our to-do list website! Organize
+                      tasks, set reminders, and boost productivity. Visit us
+                      today for a seamless experience!
                     </p>
 
                     <div className="d-flex justify-content-center column-gap-3">
@@ -311,6 +504,9 @@ const Projetos = () => {
                         Repository
                       </a>
                     </div>
+                    <small className="mt-2 d-block fw-semibold text-muted">
+                      <time dateTime="2023-27-10">27, Octuber, 2023</time>
+                    </small>
                   </div>
                   <div className="col-lg-6">
                     {/* Carousel */}
@@ -387,16 +583,101 @@ const Projetos = () => {
                     </div>
                   </div>
                 </div>
+                {/* Acordion */}
+                <div className="row mt-2">
+                  <div className="col">
+                    <div
+                      className="accordion accordion-flush"
+                      id="accordiontodoparent"
+                    >
+                      {/* Accordion Item */}
+                      <div className="accordion-item">
+                        <h2 className="accordion-header">
+                          <button
+                            className="accordion-button collapsed fw-semibold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordiontecnologies"
+                            aria-expanded="false"
+                            aria-controls="accordiontecnologies"
+                          >
+                            <i className="bi bi-file-code me-2"></i>Main
+                            technologies
+                          </button>
+                        </h2>
+                        <div
+                          id="accordiontecnologies"
+                          className="accordion-collapse collapse"
+                          data-bs-parent="#accordiontodoparent"
+                        >
+                          <div className="accordion-body">
+                            <ul className="d-flex column-gap-5 fw-semibold flex-wrap">
+                              <li>
+                                <i className="bi bi-filetype-jsx"></i> React.js
+                              </li>
+                              <li>
+                                <i className="bi bi-filetype-tsx"></i>{' '}
+                                TypeScript
+                              </li>
+                              <li>
+                                <i className="bi bi-filetype-scss"></i> Styled
+                                Components
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Accordion Item */}
+                      <div className="accordion-item">
+                        <h2 className="accordion-header">
+                          <button
+                            className="accordion-button collapsed fw-semibold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordionchallenges"
+                            aria-expanded="false"
+                            aria-controls="accordionchallenges"
+                          >
+                            <i className="bi bi-file-code me-2"></i>Challenges
+                          </button>
+                        </h2>
+                        <div
+                          id="accordionchallenges"
+                          className="accordion-collapse collapse"
+                          data-bs-parent="#accordiontodoparent"
+                        >
+                          <div className="accordion-body">
+                            <ol>
+                              <li>
+                                my little experience in{' '}
+                                <span className="text-primary">React.js</span>{' '}
+                                made things difficult in this project. Having to
+                                go back to researching solutions to problems
+                                that I consider{' '}
+                                <span className="text-primary">
+                                  simple today
+                                </span>
+                                .
+                              </li>
+                              <li>
+                                I had to learn a lot about{' '}
+                                <span className="text-primary">Typescript</span>{' '}
+                                here, how to type functions, variables,
+                                components. It was a{' '}
+                                <span className="text-primary">
+                                  decisive moment
+                                </span>{' '}
+                                and one of the most important so far.
+                              </li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div
-              className="tab-pane fade"
-              id="disabled-tab-pane"
-              role="tabpanel"
-              aria-labelledby="disabled-tab"
-              tabIndex={0}
-            >
-              ...
             </div>
           </div>
         </div>
