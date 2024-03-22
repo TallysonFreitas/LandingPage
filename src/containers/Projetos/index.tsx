@@ -82,12 +82,19 @@ const Projetos = () => {
 
                     <div className="d-flex justify-content-center column-gap-3">
                       <a
-                        href="#"
+                        target="_blank"
+                        href="https://webmotors-clone.vercel.app/"
                         className="btn btn-outline-danger fw-semibold"
+                        rel="noreferrer"
                       >
                         WebMotors
                       </a>
-                      <a href="#" className="btn btn-danger fw-semibold">
+                      <a
+                        target="_blank"
+                        href="https://github.com/TallysonFreitas/webmotors/tree/main"
+                        className="btn btn-danger fw-semibold"
+                        rel="noreferrer"
+                      >
                         Repository
                       </a>
                     </div>
@@ -290,12 +297,19 @@ const Projetos = () => {
 
                     <div className="d-flex justify-content-center column-gap-3">
                       <a
-                        href="#"
+                        target="_blank"
+                        href="https://lista-de-afazeres-alpha.vercel.app/"
                         className="btn btn-outline-success fw-semibold"
+                        rel="noreferrer"
                       >
                         Login Page
                       </a>
-                      <a href="#" className="btn btn-success fw-semibold">
+                      <a
+                        target="_blank"
+                        href="https://github.com/TallysonFreitas/Lista-De-Afazeres/tree/main"
+                        className="btn btn-success fw-semibold"
+                        rel="noreferrer"
+                      >
                         Repository
                       </a>
                     </div>
@@ -495,12 +509,19 @@ const Projetos = () => {
 
                     <div className="d-flex justify-content-center column-gap-3">
                       <a
-                        href="#"
+                        target="_blank"
+                        href="https://lista-de-afazeres-alpha.vercel.app/"
                         className="btn btn-outline-primary fw-semibold"
+                        rel="noreferrer"
                       >
                         To Do App
                       </a>
-                      <a href="#" className="btn btn-primary fw-semibold">
+                      <a
+                        target="_blank"
+                        href="https://github.com/TallysonFreitas/Lista-De-Afazeres/tree/main"
+                        className="btn btn-primary fw-semibold"
+                        rel="noreferrer"
+                      >
                         Repository
                       </a>
                     </div>
