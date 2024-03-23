@@ -1,13 +1,13 @@
-import WebmotorsImg1 from '../../assets/extencoes-configuradas.png'
-import WebmotorsImg2 from '../../assets/pagina 21 Isolated Tablet- Laptop and Smartphone Composition.png'
-import ToDoLight from '../../assets/ToDoApp-light.png'
-import ToDoDark from '../../assets/ToDoApp-dark.png'
-import LoginPageCA from '../../assets/loginPage-CreateAccount.png'
-import LoginPageSI from '../../assets/loginPage-singIn.png'
+import WebmotorsImg1 from '../../assets/images/extencoes-configuradas.png'
+import WebmotorsImg2 from '../../assets/images/pagina 21 Isolated Tablet- Laptop and Smartphone Composition.png'
+import ToDoLight from '../../assets/images/ToDoApp-light.png'
+import ToDoDark from '../../assets/images/ToDoApp-dark.png'
+import LoginPageCA from '../../assets/images/loginPage-CreateAccount.png'
+import LoginPageSI from '../../assets/images/loginPage-singIn.png'
 
 const Projetos = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-light">
       <div className="container">
         <div className="text-center">
           <h2 className="fw-bold fs-1">My personal projects</h2>

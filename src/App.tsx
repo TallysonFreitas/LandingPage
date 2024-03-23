@@ -1,13 +1,15 @@
+import About from './containers/About'
 import Header from './containers/Header'
 import Intro from './containers/Intro'
-import Trusted from './containers/Projetos'
+import Projetos from './containers/Projetos'
 
 function App() {
   return (
     <>
       <Header />
       <Intro />
-      <Trusted />
+      <Projetos />
+      <About />
     </>
   )
 }
