@@ -298,7 +298,7 @@ const Projetos = () => {
                     <div className="d-flex justify-content-center column-gap-3">
                       <a
                         target="_blank"
-                        href="https://lista-de-afazeres-alpha.vercel.app/"
+                        href="https://login-page-two-sand.vercel.app/"
                         className="btn btn-outline-success fw-semibold"
                         rel="noreferrer"
                       >
@@ -306,7 +306,7 @@ const Projetos = () => {
                       </a>
                       <a
                         target="_blank"
-                        href="https://github.com/TallysonFreitas/Lista-De-Afazeres/tree/main"
+                        href="https://login-page-two-sand.vercel.app/"
                         className="btn btn-success fw-semibold"
                         rel="noreferrer"
                       >
