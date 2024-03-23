@@ -8,7 +8,10 @@ const About = () => {
       <div className="container">
         {/* Title */}
         <div className="text-center mb-5">
-          <h2 className="fw-bold fs-1">Presentation</h2>
+          <h2 className="fw-bold fs-1">
+            <span className="text-success">Tallyson</span>
+          </h2>
+          <h2 className="fw-bold fs-1">a little closer.</h2>
         </div>
         {/* Who i am column */}
         <div className="row mb-5 align-items-center">
@@ -45,13 +48,13 @@ const About = () => {
             <h3 className="fw-semibold mb-3">My academic journey</h3>
             <p className="lead fs-6 text-muted fw-semibold">
               When I started studying programming at my college -{' '}
-              <span className="text-dark">
+              <span className="text-success">
                 Systems Analysis and Development
               </span>
               - in 2023 I became fascinated with the area of information
               technology, so much so that I looked for new ways to implement
               myself in the market through courses -{' '}
-              <span className="text-dark">Full Stack Python EBAC</span>
+              <span className="text-success">Full Stack Python EBAC</span>
             </p>
           </div>
           <div className="col-lg-4">

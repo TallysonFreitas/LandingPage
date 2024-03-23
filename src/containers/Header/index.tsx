@@ -42,7 +42,7 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#languages" className="nav-link fw-semibold">
+                <a href="#contact" className="nav-link fw-semibold">
                   Contato
                 </a>
               </li>

@@ -2,10 +2,15 @@ import LinguagemIcon from '../../components/LinguagemIcon'
 
 const Languages = () => {
   return (
-    <section className="bg-primary-subtle" id="languages">
+    <section className="bg-light" id="languages">
       <div className="container">
         <div className="text-center">
-          <h2 className="fw-bold fs-1 mb-5">Programming languages</h2>
+          <h2 className="fw-bold fs-1">
+            What I <span className="text-primary">know about</span>
+          </h2>
+          <h2 className="fw-bold fs-1 mb-5">
+            <span className="text-warning">Programming languages</span>
+          </h2>
           <div className="row align-items-center">
             <div className="col-lg-6">
               <h3>Knowledge</h3>

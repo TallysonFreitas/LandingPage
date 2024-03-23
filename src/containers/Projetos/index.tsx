@@ -10,7 +10,12 @@ const Projetos = () => {
     <section className="bg-white" id="projects">
       <div className="container">
         <div className="text-center">
-          <h2 className="fw-bold fs-1">My personal projects</h2>
+          <h2 className="fw-bold fs-1">
+            My personal <span className="text-danger">projects</span>
+          </h2>
+          <h2 className="fw-bold fs-1">
+            and <span className="text-danger">challenges in TI.</span>
+          </h2>
         </div>
         <div className="row">
           {/* Tabs */}
