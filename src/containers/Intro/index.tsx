@@ -1,4 +1,4 @@
-import projetoCarros from '../../assets/images/3d_person_png_2b0f792e-81c1-4576-82ec-b8635f2e8b96-removebg-preview.png'
+import projetoCarros from '../../assets/images/tallyson-3d.png'
 
 const Intro = () => {
   return (

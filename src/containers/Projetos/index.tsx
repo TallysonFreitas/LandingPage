@@ -1,9 +1,9 @@
-import WebmotorsImg1 from '../../assets/images/extencoes-configuradas.png'
-import WebmotorsImg2 from '../../assets/images/pagina 21 Isolated Tablet- Laptop and Smartphone Composition.png'
-import ToDoLight from '../../assets/images/ToDoApp-light.png'
-import ToDoDark from '../../assets/images/ToDoApp-dark.png'
-import LoginPageCA from '../../assets/images/loginPage-CreateAccount.png'
-import LoginPageSI from '../../assets/images/loginPage-singIn.png'
+import WebmotorsHomePage from '../../assets/images/WebMotors-homePage-compress.jpg'
+import WebmotorsSellPage from '../../assets/images/Webmotors-sellPage-compress.jpg'
+import ToDoLight from '../../assets/images/ToDoApp-light-compress.jpg'
+import ToDoDark from '../../assets/images/ToDoApp-dark-compress.jpg'
+import LoginPageCA from '../../assets/images/loginPage-CreateAccount-compress.jpg'
+import LoginPageSI from '../../assets/images/loginPage-singIn-compress.jpg'
 
 const Projetos = () => {
   return (
@@ -128,7 +128,7 @@ const Projetos = () => {
                         <div className="carousel-item active">
                           <img
                             className="img-fluid rounded shadow"
-                            src={WebmotorsImg1}
+                            src={WebmotorsHomePage}
                             alt=""
                           />
                           <div className="carousel-caption d-none d-md-block">
@@ -140,7 +140,7 @@ const Projetos = () => {
                         <div className="carousel-item">
                           <img
                             className="img-fluid rounded shadow"
-                            src={WebmotorsImg2}
+                            src={WebmotorsSellPage}
                             alt=""
                           />
                           <div className="carousel-caption d-none d-md-block">

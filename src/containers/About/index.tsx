@@ -1,5 +1,5 @@
-import TorcidaPalmeiras from '../../assets/images/Torcida-palmeiras.png'
-import DesktopImg from '../../assets/images/Desktop.png'
+import TorcidaPalmeiras from '../../assets/images/Torcida-palmeiras-compress.jpg'
+import DesktopImg from '../../assets/images/Desktop-compress.jpg'
 const About = () => {
   return (
     <section className="bg-white">
