@@ -1,5 +1,7 @@
 import TorcidaPalmeiras from '../../assets/images/Torcida-palmeiras-compress.jpg'
+import TorcidaPalmeirasFull from '../../assets/images/Torcida-palmeiras.jpg'
 import DesktopImg from '../../assets/images/Desktop-compress.jpg'
+import DesktopFullImg from '../../assets/images/Desktop.jpg'
 const About = () => {
   return (
     <section className="bg-white">
@@ -13,20 +15,28 @@ const About = () => {
           <div className="col-lg-8 text-center">
             <h3 className="fw-semibold mb-3">Who I am</h3>
             <p className="lead fs-6 text-muted fw-semibold">
-              If you are visiting this page, nice to see my name is Tallyson,
+              If you are visiting this page, nice to see! my name is Tallyson,
               I&apos;m 21 years old and I&apos;m a street cleaner. I entered the
-              profession when I was 18 and since So I stayed here. However,
-              recently, I became interested in the programming area and started
-              an ead course - Analysis and Systems development. Since then
-              I&apos;ve been interested increasingly across the area.
+              profession when I was 18 and since So I stayed here. I&apos;m a
+              big football fan and supporter of{' '}
+              <span className="text-success">Palmeiras Futebol Club</span>. I
+              like training and dieting. My life is based on{' '}
+              <span className="text-success">routine and consistency</span>.
             </p>
           </div>
           <div className="col-lg-4">
-            <img
-              className="img-fluid rounded shadow"
-              src={TorcidaPalmeiras}
-              alt="gari"
-            />
+            <picture>
+              <source
+                className="img-fluid rounded shadow"
+                media="(max-width:992px)"
+                srcSet={TorcidaPalmeirasFull}
+              />
+              <img
+                className="img-fluid rounded shadow"
+                src={TorcidaPalmeiras}
+                alt="gari"
+              />
+            </picture>
           </div>
         </div>
         {/* My academic journey column */}
@@ -34,19 +44,29 @@ const About = () => {
           <div className="col-lg-8 text-center">
             <h3 className="fw-semibold mb-3">My academic journey</h3>
             <p className="lead fs-6 text-muted fw-semibold">
-              When I started studying programming at my college - Systems
-              Analysis and Development - in 2023 I became fascinated with the
-              area of information technology, so much so that I looked for new
-              ways to implement myself in the market through free courses - Full
-              Stack Python EBAC
+              When I started studying programming at my college -{' '}
+              <span className="text-dark">
+                Systems Analysis and Development
+              </span>
+              - in 2023 I became fascinated with the area of information
+              technology, so much so that I looked for new ways to implement
+              myself in the market through courses -{' '}
+              <span className="text-dark">Full Stack Python EBAC</span>
             </p>
           </div>
           <div className="col-lg-4">
-            <img
-              className="img-fluid rounded shadow"
-              src={DesktopImg}
-              alt="desktop"
-            />
+            <picture>
+              <source
+                className="img-fluid rounded shadow"
+                media="(max-width:992px)"
+                srcSet={DesktopFullImg}
+              />
+              <img
+                className="img-fluid rounded shadow"
+                src={DesktopImg}
+                alt="desktop"
+              />
+            </picture>
           </div>
         </div>
       </div>
