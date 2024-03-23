@@ -27,17 +27,22 @@ const Header = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a href="#" className="nav-link active fw-semibold">
+                <a href="#intro" className="nav-link active fw-semibold">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link fw-semibold">
-                  Projetos
+                <a href="#about" className="nav-link fw-semibold">
+                  About me
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link fw-semibold">
+                <a href="#projects" className="nav-link fw-semibold">
+                  Projects
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#languages" className="nav-link fw-semibold">
                   Contato
                 </a>
               </li>

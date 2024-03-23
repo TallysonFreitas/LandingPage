@@ -7,7 +7,7 @@ import LoginPageSI from '../../assets/images/loginPage-singIn-compress.jpg'
 
 const Projetos = () => {
   return (
-    <section className="bg-light">
+    <section className="bg-white" id="projects">
       <div className="container">
         <div className="text-center">
           <h2 className="fw-bold fs-1">My personal projects</h2>

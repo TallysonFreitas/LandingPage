@@ -2,7 +2,7 @@ import projetoCarros from '../../assets/images/tallyson-3d.png'
 
 const Intro = () => {
   return (
-    <section>
+    <section id="intro">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6 text-center">

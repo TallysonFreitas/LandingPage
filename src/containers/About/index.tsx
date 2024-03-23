@@ -4,7 +4,7 @@ import DesktopImg from '../../assets/images/Desktop-compress.jpg'
 import DesktopFullImg from '../../assets/images/Desktop.jpg'
 const About = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-light" id="about">
       <div className="container">
         {/* Title */}
         <div className="text-center mb-5">
