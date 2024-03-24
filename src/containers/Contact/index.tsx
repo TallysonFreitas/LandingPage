@@ -12,7 +12,7 @@ const Contact = () => {
       <div className="container">
         <div className="row d-flex justify-content-center">
           <div className="col-md-6 col-lg-6">
-            <form>
+            <form className="needs-validation" noValidate>
               <div className="mb-4">
                 <label htmlFor="email" className="form-label">
                   Email address:
@@ -31,6 +31,8 @@ const Contact = () => {
                     placeholder="e.g. mario@example.com"
                     aria-label="email"
                     aria-describedby="basic-email"
+                    id="email"
+                    required
                   />
                   <span
                     className="input-group-text"
@@ -39,6 +41,9 @@ const Contact = () => {
                   >
                     <i className="bi bi-question-circle"></i>
                   </span>
+                </div>
+                <div className="invalid-feedback">
+                  Please choose a username.
                 </div>
               </div>
               <div className="mb-4">
@@ -59,6 +64,8 @@ const Contact = () => {
                     placeholder="e.g. mario@example.com"
                     aria-label="name"
                     aria-describedby="basic-name"
+                    id="name"
+                    required
                   />
                   <span
                     className="input-group-text"
@@ -77,7 +84,7 @@ const Contact = () => {
                   <span className="input-group-text">
                     <i className="bi bi-chat-left-text-fill"></i>
                   </span>
-                  <select className="form-select" aria-label="about">
+                  <select className="form-select" aria-label="about" required>
                     <option selected>Message subject</option>
                     <option value="freelance">
                       I want you to do a freelance project
@@ -96,7 +103,12 @@ const Contact = () => {
                   className="form-control"
                   aria-label="message"
                   aria-describedby="basic-addon1"
+                  id="message"
+                  required
                 />
+                <div className="invalid-feedback">
+                  Please write some message
+                </div>
               </div>
 
               <button
