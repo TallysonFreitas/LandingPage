@@ -17,8 +17,8 @@ const Intro = () => {
               here! Counter strike player since 2018. Fan of palmeiras - 1951
               club world cup
             </p>
-            <a href="#" className="btn btn-primary fw-semibold">
-              Sign up with email
+            <a href="#contact" className="btn btn-warning fw-semibold">
+              Send a message
             </a>
           </div>
           <div className="col-md-6">

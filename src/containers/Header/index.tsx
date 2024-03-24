@@ -21,6 +21,8 @@ const Header = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+
+          {/* Links */}
           <div
             className="collapse navbar-collapse justify-content-end"
             id="containerLinksNav"
@@ -42,16 +44,18 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#contact" className="nav-link fw-semibold">
-                  Contato
+                <a href="#languages" className="nav-link fw-semibold">
+                  Languages
                 </a>
               </li>
-              <button className="btn btn-outline-primary m-2 my-lg-0 fw-semibold">
-                Login
-              </button>
-              <button className="btn btn-warning m-2 my-lg-0 fw-semibold">
-                Sign up for free
-              </button>
+              <li>
+                <a
+                  href="#contact"
+                  className="btn btn-warning m-2 my-lg-0 fw-semibold"
+                >
+                  Send a message
+                </a>
+              </li>
             </ul>
           </div>
         </div>
