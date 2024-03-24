@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import FormContato from '../../components/FormContato'
+import FormBootstrap from '../../components/FormBootstrap'
 
 const Contact = () => {
   return (
@@ -15,7 +14,7 @@ const Contact = () => {
       <div className="container">
         <div className="row d-flex justify-content-center">
           <div className="col-md-6 col-lg-6">
-            <FormContato />
+            <FormBootstrap />
           </div>
         </div>
       </div>
