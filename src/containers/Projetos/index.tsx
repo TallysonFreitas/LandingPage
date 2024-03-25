@@ -9,7 +9,7 @@ const Projetos = () => {
   return (
     <section className="bg-white" id="projects">
       <div className="container">
-        <div className="text-center">
+        <div className="text-center mb-5">
           <h2 className="fw-bold fs-1">
             My personal <span className="text-danger">projects</span>
           </h2>
