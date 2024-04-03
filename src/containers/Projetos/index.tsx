@@ -36,7 +36,7 @@ const Projetos = () => {
             </li>
             <li className="nav-item" role="presentation">
               <button
-                className="nav-link text-success fw-semibold"
+                className="nav-link text-altdark fw-semibold"
                 id="profile-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#loginpage"
@@ -293,7 +293,7 @@ const Projetos = () => {
                 <div className="row align-items-center justify-content-center text-center">
                   <div className="col-lg-6">
                     <h2 className="mt-3 mt-md-0">
-                      <span className="text-success fw-bold">Login Page</span>
+                      <span className="text-altdark fw-bold">Login Page</span>
                     </h2>
                     <p className="lead text-muted fw-semibold my-3">
                       Explore our website and experience seamless access with
@@ -305,7 +305,7 @@ const Projetos = () => {
                       <a
                         target="_blank"
                         href="https://login-page-two-sand.vercel.app/"
-                        className="btn btn-outline-success fw-semibold"
+                        className="btn btn-outline-altdark fw-semibold"
                         rel="noreferrer"
                       >
                         Login Page
@@ -313,7 +313,7 @@ const Projetos = () => {
                       <a
                         target="_blank"
                         href="https://login-page-two-sand.vercel.app/"
-                        className="btn btn-success fw-semibold"
+                        className="btn btn-altdark fw-semibold"
                         rel="noreferrer"
                       >
                         Repository
@@ -466,7 +466,7 @@ const Projetos = () => {
                             <ol>
                               <li>
                                 While still learning about{' '}
-                                <span className="text-success">
+                                <span className="text-altdark">
                                   styled components
                                 </span>
                                 , I had many problems integrating it with
@@ -475,7 +475,7 @@ const Projetos = () => {
                               </li>
                               <li>
                                 Creating{' '}
-                                <span className="text-success">
+                                <span className="text-altdark">
                                   responsiveness
                                 </span>{' '}
                                 without any assistance was a big challenge,
