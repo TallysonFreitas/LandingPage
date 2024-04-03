@@ -12,12 +12,21 @@ const Intro = () => {
               and i&apos;m{' '}
               <span className="text-warning">frontend developer</span>
             </h2>
-            <p className="lead text-muted fw-semibold fs-6 my-5">
+            <p
+              className="lead text-muted fw-semibold fs-6 my-5"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               passionate about solving and creating. Message me, I&apos;m always
               here! Counter strike player since 2018. Fan of palmeiras - 1951
               club world cup
             </p>
-            <a href="#contact" className="btn btn-warning fw-semibold">
+            <a
+              href="#contact"
+              className="btn btn-warning fw-semibold"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               Send a message
             </a>
           </div>
@@ -27,6 +36,7 @@ const Intro = () => {
               src={ImgIntro}
               alt="projetos"
               data-aos="fade-left"
+              data-aos-duration="1000"
             />
           </div>
         </div>

@@ -32,12 +32,14 @@ const About = () => {
                 media="(max-width:992px)"
                 srcSet={ImgSapiensBW}
                 data-aos="fade-right"
+                data-aos-duration="1000"
               />
               <img
                 className="img-fluid"
                 src={ImgSapiensBW}
                 alt="about me"
                 data-aos="fade-left"
+                data-aos-duration="1000"
               />
             </picture>
           </div>
@@ -64,12 +66,14 @@ const About = () => {
                 media="(max-width:992px)"
                 srcSet={SapiensMale}
                 data-aos="fade-right"
+                data-aos-duration="1000"
               />
               <img
                 className="img-fluid"
                 src={SapiensMale}
                 alt="to study"
                 data-aos="fade-right"
+                data-aos-duration="1000"
               />
             </picture>
           </div>
