@@ -31,7 +31,7 @@ const Projetos = () => {
                 aria-controls="webmotors"
                 aria-selected="true"
               >
-                WebMotors - clone
+                WebMotors
               </button>
             </li>
             <li className="nav-item" role="presentation">
