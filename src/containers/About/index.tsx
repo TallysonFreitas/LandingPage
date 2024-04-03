@@ -15,7 +15,7 @@ const About = () => {
         <div className="row mb-5 align-items-center">
           <div className="col-lg-8 text-center">
             <h3 className="fw-semibold mb-3">Who I am</h3>
-            <p className="lead fs-6 text-muted fw-semibold">
+            <p className="lead fs-6 text-muted fw-semibold" data-aos="fade-up">
               If you are visiting this page, nice to see! my name is Tallyson,
               I&apos;m 21 years old and I&apos;m a street cleaner. I entered the
               profession when I was 18 and since So I stayed here. I&apos;m a
@@ -31,8 +31,14 @@ const About = () => {
                 className="img-fluid"
                 media="(max-width:992px)"
                 srcSet={ImgSapiensBW}
+                data-aos="fade-right"
               />
-              <img className="img-fluid" src={ImgSapiensBW} alt="about me" />
+              <img
+                className="img-fluid"
+                src={ImgSapiensBW}
+                alt="about me"
+                data-aos="fade-left"
+              />
             </picture>
           </div>
         </div>
@@ -40,7 +46,7 @@ const About = () => {
         <div className="row align-items-center flex-row-reverse">
           <div className="col-lg-8 text-center">
             <h3 className="fw-semibold mb-3">My academic journey</h3>
-            <p className="lead fs-6 text-muted fw-semibold">
+            <p className="lead fs-6 text-muted fw-semibold" data-aos="fade-up">
               When I started studying programming at my college -{' '}
               <span className="text-success">
                 Systems Analysis and Development
@@ -57,8 +63,14 @@ const About = () => {
                 className="img-fluid"
                 media="(max-width:992px)"
                 srcSet={SapiensMale}
+                data-aos="fade-right"
               />
-              <img className="img-fluid" src={SapiensMale} alt="to study" />
+              <img
+                className="img-fluid"
+                src={SapiensMale}
+                alt="to study"
+                data-aos="fade-right"
+              />
             </picture>
           </div>
         </div>

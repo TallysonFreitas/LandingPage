@@ -22,7 +22,12 @@ const Intro = () => {
             </a>
           </div>
           <div className="col-md-6">
-            <img className="img-fluid" src={ImgIntro} alt="projetos" />
+            <img
+              className="img-fluid"
+              src={ImgIntro}
+              alt="projetos"
+              data-aos="fade-left"
+            />
           </div>
         </div>
       </div>
