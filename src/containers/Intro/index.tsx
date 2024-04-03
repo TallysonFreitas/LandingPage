@@ -1,4 +1,4 @@
-import projetoCarros from '../../assets/images/tallyson-3d.png'
+import ImgIntro from '../../assets/images/sapiens.png'
 
 const Intro = () => {
   return (
@@ -22,7 +22,7 @@ const Intro = () => {
             </a>
           </div>
           <div className="col-md-6">
-            <img className="img-fluid" src={projetoCarros} alt="projetos" />
+            <img className="img-fluid" src={ImgIntro} alt="projetos" />
           </div>
         </div>
       </div>

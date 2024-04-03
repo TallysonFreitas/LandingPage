@@ -1,7 +1,5 @@
-import TorcidaPalmeiras from '../../assets/images/Torcida-palmeiras-compress.jpg'
-import TorcidaPalmeirasFull from '../../assets/images/Torcida-palmeiras.jpg'
-import DesktopImg from '../../assets/images/Desktop-compress.jpg'
-import DesktopFullImg from '../../assets/images/Desktop.jpg'
+import ImgSapiensBW from '../../assets/images/sapiens-man.png'
+import SapiensMale from '../../assets/images/sapiens-woman.png'
 const About = () => {
   return (
     <section className="bg-light" id="about">
@@ -30,15 +28,11 @@ const About = () => {
           <div className="col-lg-4">
             <picture>
               <source
-                className="img-fluid rounded shadow"
+                className="img-fluid"
                 media="(max-width:992px)"
-                srcSet={TorcidaPalmeirasFull}
+                srcSet={ImgSapiensBW}
               />
-              <img
-                className="img-fluid rounded shadow"
-                src={TorcidaPalmeiras}
-                alt="gari"
-              />
+              <img className="img-fluid" src={ImgSapiensBW} alt="about me" />
             </picture>
           </div>
         </div>
@@ -60,15 +54,11 @@ const About = () => {
           <div className="col-lg-4">
             <picture>
               <source
-                className="img-fluid rounded shadow"
+                className="img-fluid"
                 media="(max-width:992px)"
-                srcSet={DesktopFullImg}
+                srcSet={SapiensMale}
               />
-              <img
-                className="img-fluid rounded shadow"
-                src={DesktopImg}
-                alt="desktop"
-              />
+              <img className="img-fluid" src={SapiensMale} alt="to study" />
             </picture>
           </div>
         </div>
