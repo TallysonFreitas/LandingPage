@@ -28,7 +28,7 @@ const About = () => {
               <span className="text-success">routine and consistency</span>.
             </p>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 d-flex justify-content-center">
             <picture>
               <source
                 className="img-fluid"
@@ -62,7 +62,7 @@ const About = () => {
               <span className="text-success">Full Stack Python EBAC</span>
             </p>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 d-flex justify-content-center">
             <picture>
               <source
                 className="img-fluid"
