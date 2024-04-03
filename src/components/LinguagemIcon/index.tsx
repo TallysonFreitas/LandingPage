@@ -10,6 +10,7 @@ const LinguagemIcon = ({
   return (
     <ContainerLinguagemItem
       title={linguagem}
+      data-aos="zoom-in"
       className="bg-white p-2 rounded shadow mt-3 d-flex"
     >
       {children}

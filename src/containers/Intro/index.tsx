@@ -1,4 +1,5 @@
-import ImgIntro from '../../assets/images/sapiens.png'
+import ImgIntroLg from '../../assets/images/sapiens-lg.png'
+import ImgIntroMn from '../../assets/images/sapiens-mn.png'
 
 const Intro = () => {
   return (
@@ -31,13 +32,22 @@ const Intro = () => {
             </a>
           </div>
           <div className="col-md-6">
-            <img
-              className="img-fluid"
-              src={ImgIntro}
-              alt="projetos"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-            />
+            <picture>
+              <source
+                className="img-fluid"
+                media="(max-width:767px)"
+                srcSet={ImgIntroLg}
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
+              <img
+                className="img-fluid"
+                src={ImgIntroLg}
+                alt="projetos"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
+            </picture>
           </div>
         </div>
       </div>

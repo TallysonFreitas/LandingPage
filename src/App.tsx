@@ -4,10 +4,12 @@ import Header from './containers/Header'
 import Intro from './containers/Intro'
 import Languages from './containers/Languages'
 import Projetos from './containers/Projetos'
+import { GlobalStyle } from './themeProvider'
 
 function App() {
   return (
     <>
+      <GlobalStyle />
       <Header />
       <Intro />
       <About />

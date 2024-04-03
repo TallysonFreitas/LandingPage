@@ -72,6 +72,7 @@ const Projetos = () => {
               role="tabpanel"
               aria-labelledby="home-tab"
               tabIndex={0}
+              data-aos="flip-right"
             >
               <div className="container py-2">
                 <div className="row align-items-center justify-content-center text-center">

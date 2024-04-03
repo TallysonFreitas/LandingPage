@@ -1,5 +1,8 @@
-import ImgSapiensBW from '../../assets/images/sapiens-man.png'
-import SapiensMale from '../../assets/images/sapiens-woman.png'
+import ImgSapiensMaleMn from '../../assets/images/sapiens-man-mn.png'
+import ImgSapiensMaleLg from '../../assets/images/sapiens-man-lg.png'
+import SapiensFemaleMn from '../../assets/images/sapiens-woman-mn.png'
+import SapiensFemaleLg from '../../assets/images/sapiens-woman-lg.png'
+
 const About = () => {
   return (
     <section className="bg-light" id="about">
@@ -30,13 +33,13 @@ const About = () => {
               <source
                 className="img-fluid"
                 media="(max-width:992px)"
-                srcSet={ImgSapiensBW}
+                srcSet={ImgSapiensMaleMn}
                 data-aos="fade-right"
                 data-aos-duration="1000"
               />
               <img
                 className="img-fluid"
-                src={ImgSapiensBW}
+                src={ImgSapiensMaleLg}
                 alt="about me"
                 data-aos="fade-left"
                 data-aos-duration="1000"
@@ -64,13 +67,13 @@ const About = () => {
               <source
                 className="img-fluid"
                 media="(max-width:992px)"
-                srcSet={SapiensMale}
+                srcSet={SapiensFemaleMn}
                 data-aos="fade-right"
                 data-aos-duration="1000"
               />
               <img
                 className="img-fluid"
-                src={SapiensMale}
+                src={SapiensFemaleLg}
                 alt="to study"
                 data-aos="fade-right"
                 data-aos-duration="1000"

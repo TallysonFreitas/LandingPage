@@ -12,7 +12,7 @@ const Languages = () => {
             <span className="text-warning">Programming languages</span>
           </h2>
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up">
               <h3>Knowledge</h3>
               <p className="lead mb-0">
                 just considering the ones I have an intermediate level above
