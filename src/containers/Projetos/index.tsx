@@ -98,9 +98,9 @@ const Projetos = () => {
                       <span className="text-success fw-bold">Financess</span>
                     </h2>
                     <p className="lead text-muted fw-semibold my-3">
-                      Explore our extensive collection of top-tier vehicles and
-                      discover the perfect ride for you at our online car
-                      dealership today. Browse now and experience excellence!
+                      Descubra o caminho para uma vida financeira mais próspera.
+                      Visite nosso site agora e transforme suas finanças para
+                      sempre!
                     </p>
 
                     <div className="d-flex justify-content-center column-gap-3">
