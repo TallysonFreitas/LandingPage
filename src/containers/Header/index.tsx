@@ -4,7 +4,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg bg-white">
         <div className="container">
           {/* Brand */}
-          <a className="navbar-brand fw-semibold fs-4" href="#">
+          <a className="navbar-brand fw-semibold fs-4" href="/">
             <i className="bi bi-code"></i> Tallyson.dev{' '}
             <i className="bi bi-code-slash"></i>
           </a>

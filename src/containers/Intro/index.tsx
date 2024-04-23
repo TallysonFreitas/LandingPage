@@ -14,13 +14,12 @@ const Intro = () => {
               <span className="text-warning">frontend developer</span>
             </h2>
             <p
-              className="lead text-muted fw-semibold fs-6 my-5"
+              className="lead text-muted fw-semibold fs-6 mt-5"
               data-aos="fade-up"
               data-aos-duration="500"
             >
-              passionate about solving and creating. Message me, I&apos;m always
-              here! Counter strike player since 2018. Fan of palmeiras - 1951
-              club world cup
+              I&lsquo;m a front end developer ready to deliver the perfect
+              interface for your company&lsquo;s website
             </p>
             <a
               href="#contact"

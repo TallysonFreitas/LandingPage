@@ -1,14 +1,92 @@
-import WebmotorsHomePage from '../../assets/images/WebMotors-homePage-compress.jpg'
-import WebmotorsSellPage from '../../assets/images/Webmotors-sellPage-compress.jpg'
-import ToDoLight from '../../assets/images/ToDoApp-light-compress.jpg'
-import ToDoDark from '../../assets/images/ToDoApp-dark-compress.jpg'
-import LoginPageCA from '../../assets/images/loginPage-CreateAccount-compress.jpg'
-import LoginPageSI from '../../assets/images/loginPage-singIn-compress.jpg'
+import webmotorsHomePage from '../../assets/images/WebMotors-homePage-compress.jpg'
+import webmotorsSellPage from '../../assets/images/Webmotors-sellPage-compress.jpg'
+import toDoLight from '../../assets/images/ToDoApp-light-compress.jpg'
+import toDoDark from '../../assets/images/ToDoApp-dark-compress.jpg'
+import loginPageCA from '../../assets/images/loginPage-CreateAccount-compress.jpg'
+import loginPageSI from '../../assets/images/loginPage-singIn-compress.jpg'
+import financessHome from '../../assets/images/Financess-HomePage-min.png'
+import financessAnalytics from '../../assets/images/Financess-AnalyticsPage-min.png'
 
-import FinancessHome from '../../assets/images/Financess-HomePage-min.png'
-import FinancessAnalytics from '../../assets/images/Financess-AnalyticsPage-min.png'
+export type ProjectType = {
+  name: string
+  id: number
+  defaultSelect: boolean
+  projectColor: string
+  target: string
+  body: {
+    description: string
+    deploy: string
+    repository: string
+    date: string
+    imgs: string[]
+  }
+}
 
 const Projetos = () => {
+  const projetos: ProjectType[] = [
+    {
+      name: 'Financess',
+      id: 1,
+      defaultSelect: true,
+      projectColor: 'success',
+      target: 'financess',
+      body: {
+        repository: 'https://github.com/TallysonFreitas/Financess',
+        deploy: 'https://financess.vercel.app/',
+        description:
+          'Discover the path to a more prosperous financial life. Visit our website now and transform your finances forever!',
+        date: '03, April, 2024',
+        imgs: [financessHome, financessAnalytics]
+      }
+    },
+    {
+      name: 'WebMotors',
+      id: 2,
+      defaultSelect: false,
+      projectColor: 'danger',
+      target: 'webmotors',
+      body: {
+        repository: 'https://github.com/TallysonFreitas/webmotors',
+        deploy: 'https://webmotors-clone.vercel.app/',
+        description:
+          'Explore our extensive collection of top-tier vehicles and discover the perfect ride for you at our online car dealership today. Browse now and experience excellence!',
+        date: '29, February, 2024',
+        imgs: [webmotorsHomePage, webmotorsSellPage]
+      }
+    },
+    {
+      name: 'Login Page',
+      id: 3,
+      defaultSelect: false,
+      projectColor: 'altdark',
+      target: 'loginpage',
+      body: {
+        repository: 'https://github.com/TallysonFreitas/Login-Page',
+        deploy: 'https://login-page-two-sand.vercel.app/',
+        description:
+          'Explore our website and experience seamless access with our login feature. Join us to unlock exclusive content and personalized experiences!',
+        date: '11, November, 2023',
+        imgs: [loginPageCA, loginPageSI]
+      }
+    },
+    {
+      name: 'To Do App',
+
+      id: 4,
+      defaultSelect: false,
+      projectColor: 'primary',
+      target: 'todoapp',
+      body: {
+        repository: 'https://github.com/TallysonFreitas/Lista-De-Afazeres',
+        deploy: 'https://github.com/TallysonFreitas/Lista-De-Afazeres',
+        description:
+          'Discover efficiency with our to-do list website! Organize tasks, set reminders, and boost productivity. Visit us today for a seamless experience!',
+        date: '27, Octuber, 2023',
+        imgs: [toDoDark, toDoLight]
+      }
+    }
+  ]
+
   return (
     <section className="bg-white" id="projects">
       <div className="container">
@@ -23,923 +101,258 @@ const Projetos = () => {
         <div className="row">
           {/* Tabs */}
           <ul className="nav nav-tabs" id="myTab" role="tablist">
-            <li className="nav-item" role="presentation">
-              <button
-                className="nav-link text-success fw-semibold active"
-                id="home-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#financess"
-                type="button"
-                role="tab"
-                aria-controls="financess"
-                aria-selected="true"
-              >
-                Financess
-              </button>
-            </li>
-            <li className="nav-item" role="presentation">
-              <button
-                className="nav-link text-danger fw-semibold"
-                id="home-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#webmotors"
-                type="button"
-                role="tab"
-                aria-controls="webmotors"
-                aria-selected="false"
-              >
-                WebMotors
-              </button>
-            </li>
-            <li className="nav-item" role="presentation">
-              <button
-                className="nav-link text-altdark fw-semibold"
-                id="profile-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#loginpage"
-                type="button"
-                role="tab"
-                aria-controls="loginpage"
-                aria-selected="false"
-              >
-                Login Page
-              </button>
-            </li>
-            <li className="nav-item" role="presentation">
-              <button
-                className="nav-link text-primary fw-semibold"
-                id="contact-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#todoapp"
-                type="button"
-                role="tab"
-                aria-controls="todoapp"
-                aria-selected="false"
-              >
-                To Do App
-              </button>
-            </li>
+            {projetos.map((project) => (
+              <li className="nav-item" role="presentation" key={project.id}>
+                <button
+                  className={`nav-link text-${
+                    project.projectColor
+                  } fw-semibold ${
+                    project.defaultSelect === true ? 'active' : ''
+                  }`}
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target={`#${project.target}`}
+                  type="button"
+                  role="tab"
+                  aria-controls={`${project.target}`}
+                  aria-selected={project.defaultSelect}
+                >
+                  {project.name}
+                </button>
+              </li>
+            ))}
           </ul>
           {/* Conteudo das Tabs */}
           <div className="tab-content" id="myTabContent">
-            {/* Container Financess */}
-            <div
-              className="tab-pane fade show active"
-              id="financess"
-              role="tabpanel"
-              aria-labelledby="home-tab"
-              tabIndex={0}
-              data-aos="flip-right"
-            >
-              <div className="container py-2">
-                <div className="row align-items-center justify-content-center text-center">
-                  <div className="col-lg-6">
-                    <h2 className="mt-3 mt-md-0">
-                      <span className="text-success fw-bold">Financess</span>
-                    </h2>
-                    <p className="lead text-muted fw-semibold my-3">
-                      Descubra o caminho para uma vida financeira mais próspera.
-                      Visite nosso site agora e transforme suas finanças para
-                      sempre!
-                    </p>
-
-                    <div className="d-flex justify-content-center column-gap-3">
-                      <a
-                        target="_blank"
-                        href="https://financess.vercel.app"
-                        className="btn btn-outline-success fw-semibold"
-                        rel="noreferrer"
-                      >
-                        Financess
-                      </a>
-                      <a
-                        target="_blank"
-                        href="https://github.com/TallysonFreitas/webmotors/tree/main"
-                        className="btn btn-success fw-semibold"
-                        rel="noreferrer"
-                      >
-                        Repository
-                      </a>
-                    </div>
-                    <small className="mt-2 d-block fw-semibold text-muted">
-                      <time dateTime="2024-29-02">03, April, 2024</time>
-                    </small>
-                  </div>
-                  <div className="col-lg-6">
-                    {/* Carousel */}
-                    <div
-                      id="carouselwebmotors"
-                      className="carousel carousel-dark shadow slide"
-                    >
-                      <div className="carousel-indicators">
-                        <button
-                          type="button"
-                          data-bs-target="#carouselwebmotors"
-                          data-bs-slide-to="0"
-                          className="active"
-                          aria-current="true"
-                          aria-label="Slide 1"
-                        ></button>
-                        <button
-                          type="button"
-                          data-bs-target="#carouselwebmotors"
-                          data-bs-slide-to="1"
-                          aria-label="Slide 2"
-                        ></button>
-                      </div>
-                      <div className="carousel-inner">
-                        <div className="carousel-item active">
-                          <img
-                            className="img-fluid rounded shadow"
-                            src={FinancessHome}
-                            alt=""
-                          />
-                          <div className="carousel-caption d-none d-md-block">
-                            <h5 className="shadow bg-white rounded p-2">
-                              Home
-                            </h5>
-                          </div>
-                        </div>
-                        <div className="carousel-item">
-                          <img
-                            className="img-fluid rounded shadow"
-                            src={FinancessAnalytics}
-                            alt=""
-                          />
-                          <div className="carousel-caption d-none d-md-block">
-                            <h5 className="shadow bg-white rounded p-2">
-                              Analytics
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <button
-                        className="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carouselwebmotors"
-                        data-bs-slide="prev"
-                      >
-                        <span
-                          className="carousel-control-prev-icon"
-                          aria-hidden="true"
-                        ></span>
-                        <span className="visually-hidden">Previous</span>
-                      </button>
-                      <button
-                        className="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carouselwebmotors"
-                        data-bs-slide="next"
-                      >
-                        <span
-                          className="carousel-control-next-icon"
-                          aria-hidden="true"
-                        ></span>
-                        <span className="visually-hidden">Next</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                {/* Acordion */}
-                <div className="row mt-2">
-                  <div className="col">
-                    <div
-                      className="accordion accordion-flush"
-                      id="accordionwebmotorsparent"
-                    >
-                      {/* Accordion Item Main Tecnologies */}
-                      <div className="accordion-item">
-                        <h2 className="accordion-header">
-                          <button
-                            className="accordion-button collapsed fw-semibold"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#accordiontecnologies"
-                            aria-expanded="false"
-                            aria-controls="accordiontecnologies"
+            {projetos.map((project) => (
+              <>
+                <div
+                  className={`tab-pane fade show ${
+                    project.defaultSelect ? 'active' : ''
+                  }`}
+                  id={project.target}
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                  tabIndex={0}
+                  data-aos="flip-right"
+                >
+                  <div className="container py-2">
+                    <div className="row align-items-center justify-content-center text-center">
+                      <div className="col-lg-6">
+                        <h2 className="mt-3 mt-md-0">
+                          <span
+                            className={`text-${project.projectColor} fw-bold`}
                           >
-                            <i className="bi bi-file-code me-2"></i>Main
-                            technologies
-                          </button>
+                            {project.name}
+                          </span>
                         </h2>
-                        <div
-                          id="accordiontecnologies"
-                          className="accordion-collapse collapse"
-                          data-bs-parent="#accordionwebmotorsparent"
-                        >
-                          <div className="accordion-body">
-                            <ul className="d-flex column-gap-5 fw-semibold flex-wrap">
-                              <li>
-                                <i className="bi bi-filetype-jsx"></i> Bootstrap
-                              </li>
-                              <li>
-                                <i className="bi bi-filetype-jsx"></i> React.js
-                              </li>
-                              <li>
-                                <i className="bi bi-filetype-tsx"></i>{' '}
-                                TypeScript
-                              </li>
-                              <li>
-                                <i className="bi bi-filetype-scss"></i> Styled
-                                Components
-                              </li>
-                              <li>
-                                <i className="bi bi-archive"></i> Redux.js
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
+                        <p className="lead text-muted fw-semibold my-3">
+                          {project.body.description}
+                        </p>
 
-                      {/* Accordion Item Challenges */}
-                      <div className="accordion-item">
-                        <h2 className="accordion-header">
-                          <button
-                            className="accordion-button collapsed fw-semibold"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#accordionchallenges"
-                            aria-expanded="false"
-                            aria-controls="accordionchallenges"
+                        <div className="d-flex justify-content-center column-gap-3">
+                          <a
+                            target="_blank"
+                            href={project.body.deploy}
+                            className={`btn btn-outline-${project.projectColor} fw-semibold`}
+                            rel="noreferrer"
                           >
-                            <i className="bi bi-file-code me-2"></i>Challenges
-                          </button>
-                        </h2>
+                            {project.name}
+                          </a>
+                          <a
+                            target="_blank"
+                            href={project.body.repository}
+                            className={`btn btn-${project.projectColor} fw-semibold`}
+                            rel="noreferrer"
+                          >
+                            Repository
+                          </a>
+                        </div>
+                        <small className="mt-2 d-block fw-semibold text-muted">
+                          <time dateTime="2024-29-02">{project.body.date}</time>
+                        </small>
+                      </div>
+                      <div className="col-lg-6">
+                        {/* Carousel */}
                         <div
-                          id="accordionchallenges"
-                          className="accordion-collapse collapse"
-                          data-bs-parent="#accordionwebmotorsparent"
+                          id={`carousel${project.target}`}
+                          className="carousel carousel-dark shadow slide"
                         >
-                          <div className="accordion-body">
-                            <ol>
-                              <li>
-                                Using and handling data through the{' '}
-                                <span className="text-danger">
-                                  Fetch function
-                                </span>
-                                , which I knew very little about. I managed,{' '}
-                                <span className="text-danger">
-                                  only by studying a lot
-                                </span>
-                                , to learn how to use it to retrieve data coming
-                                from the link headers and use it to render the
-                                correct sales page for each car.
-                              </li>
-                              <li>
-                                Creating responsiveness without any assistance
-                                was a big challenge, since with each new
-                                implementation I had to test each version of the
-                                site in order to discover new instabilities.
-                              </li>
-                            </ol>
+                          <div className="carousel-indicators">
+                            <button
+                              type="button"
+                              data-bs-target={`#carousel${project.target}`}
+                              data-bs-slide-to="0"
+                              className="active"
+                              aria-current="true"
+                              aria-label="Slide 1"
+                            ></button>
+                            <button
+                              type="button"
+                              data-bs-target={`#carousel${project.target}`}
+                              data-bs-slide-to="1"
+                              aria-label="Slide 2"
+                            ></button>
                           </div>
+                          <div className="carousel-inner">
+                            <div className="carousel-item active">
+                              <img
+                                className="img-fluid rounded shadow"
+                                src={project.body.imgs[0]}
+                                alt=""
+                              />
+                              <div className="carousel-caption d-none d-md-block">
+                                <h5 className="shadow bg-white rounded p-2">
+                                  Home
+                                </h5>
+                              </div>
+                            </div>
+                            <div className="carousel-item">
+                              <img
+                                className="img-fluid rounded shadow"
+                                src={project.body.imgs[1]}
+                                alt=""
+                              />
+                              <div className="carousel-caption d-none d-md-block">
+                                <h5 className="shadow bg-white rounded p-2">
+                                  Analytics
+                                </h5>
+                              </div>
+                            </div>
+                          </div>
+                          <button
+                            className="carousel-control-prev"
+                            type="button"
+                            data-bs-target={`#carousel${project.target}`}
+                            data-bs-slide="prev"
+                          >
+                            <span
+                              className="carousel-control-prev-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span className="visually-hidden">Previous</span>
+                          </button>
+                          <button
+                            className="carousel-control-next"
+                            type="button"
+                            data-bs-target={`#carousel${project.target}`}
+                            data-bs-slide="next"
+                          >
+                            <span
+                              className="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span className="visually-hidden">Next</span>
+                          </button>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Container WebMotors */}
-            <div
-              className="tab-pane fade show"
-              id="webmotors"
-              role="tabpanel"
-              aria-labelledby="home-tab"
-              tabIndex={0}
-            >
-              <div className="container py-2">
-                <div className="row align-items-center justify-content-center text-center">
-                  <div className="col-lg-6">
-                    <h2 className="mt-3 mt-md-0">
-                      <span className="text-danger fw-bold">WebMotors</span>
-                    </h2>
-                    <p className="lead text-muted fw-semibold my-3">
-                      Explore our extensive collection of top-tier vehicles and
-                      discover the perfect ride for you at our online car
-                      dealership today. Browse now and experience excellence!
-                    </p>
-
-                    <div className="d-flex justify-content-center column-gap-3">
-                      <a
-                        target="_blank"
-                        href="https://webmotors-clone.vercel.app/"
-                        className="btn btn-outline-danger fw-semibold"
-                        rel="noreferrer"
-                      >
-                        WebMotors
-                      </a>
-                      <a
-                        target="_blank"
-                        href="https://github.com/TallysonFreitas/webmotors/tree/main"
-                        className="btn btn-danger fw-semibold"
-                        rel="noreferrer"
-                      >
-                        Repository
-                      </a>
-                    </div>
-                    <small className="mt-2 d-block fw-semibold text-muted">
-                      <time dateTime="2024-29-02">29, February, 2024</time>
-                    </small>
-                  </div>
-                  <div className="col-lg-6">
-                    {/* Carousel */}
-                    <div
-                      id="carouselwebmotors"
-                      className="carousel carousel-dark shadow slide"
-                    >
-                      <div className="carousel-indicators">
-                        <button
-                          type="button"
-                          data-bs-target="#carouselwebmotors"
-                          data-bs-slide-to="0"
-                          className="active"
-                          aria-current="true"
-                          aria-label="Slide 1"
-                        ></button>
-                        <button
-                          type="button"
-                          data-bs-target="#carouselwebmotors"
-                          data-bs-slide-to="1"
-                          aria-label="Slide 2"
-                        ></button>
-                      </div>
-                      <div className="carousel-inner">
-                        <div className="carousel-item active">
-                          <img
-                            className="img-fluid rounded shadow"
-                            src={WebmotorsHomePage}
-                            alt=""
-                          />
-                          <div className="carousel-caption d-none d-md-block">
-                            <h5 className="shadow bg-white rounded p-2">
-                              Home
-                            </h5>
-                          </div>
-                        </div>
-                        <div className="carousel-item">
-                          <img
-                            className="img-fluid rounded shadow"
-                            src={WebmotorsSellPage}
-                            alt=""
-                          />
-                          <div className="carousel-caption d-none d-md-block">
-                            <h5 className="shadow bg-white rounded p-2">
-                              Pagina de Venda
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <button
-                        className="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carouselwebmotors"
-                        data-bs-slide="prev"
-                      >
-                        <span
-                          className="carousel-control-prev-icon"
-                          aria-hidden="true"
-                        ></span>
-                        <span className="visually-hidden">Previous</span>
-                      </button>
-                      <button
-                        className="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carouselwebmotors"
-                        data-bs-slide="next"
-                      >
-                        <span
-                          className="carousel-control-next-icon"
-                          aria-hidden="true"
-                        ></span>
-                        <span className="visually-hidden">Next</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                {/* Acordion */}
-                <div className="row mt-2">
-                  <div className="col">
-                    <div
-                      className="accordion accordion-flush"
-                      id="accordionwebmotorsparent"
-                    >
-                      {/* Accordion Item */}
-                      <div className="accordion-item">
-                        <h2 className="accordion-header">
-                          <button
-                            className="accordion-button collapsed fw-semibold"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#accordiontecnologies"
-                            aria-expanded="false"
-                            aria-controls="accordiontecnologies"
-                          >
-                            <i className="bi bi-file-code me-2"></i>Main
-                            technologies
-                          </button>
-                        </h2>
+                    {/* Acordion */}
+                    <div className="row mt-2">
+                      <div className="col">
                         <div
-                          id="accordiontecnologies"
-                          className="accordion-collapse collapse"
-                          data-bs-parent="#accordionwebmotorsparent"
+                          className="accordion accordion-flush"
+                          id={`#carousel${project.target}parent`}
                         >
-                          <div className="accordion-body">
-                            <ul className="d-flex column-gap-5 fw-semibold flex-wrap">
-                              <li>
-                                <i className="bi bi-filetype-jsx"></i> React.js
-                              </li>
-                              <li>
-                                <i className="bi bi-filetype-tsx"></i>{' '}
-                                TypeScript
-                              </li>
-                              <li>
-                                <i className="bi bi-filetype-scss"></i> Styled
-                                Components
-                              </li>
-                              <li>
-                                <i className="bi bi-archive"></i> Redux.js
-                              </li>
-                            </ul>
+                          {/* Accordion Item Main Tecnologies */}
+                          <div className="accordion-item">
+                            <h2 className="accordion-header">
+                              <button
+                                className="accordion-button collapsed fw-semibold"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#accordiontecnologies"
+                                aria-expanded="false"
+                                aria-controls="accordiontecnologies"
+                              >
+                                <i className="bi bi-file-code me-2"></i>Main
+                                technologies
+                              </button>
+                            </h2>
+                            <div
+                              id="accordiontecnologies"
+                              className="accordion-collapse collapse"
+                              data-bs-parent="#accordionwebmotorsparent"
+                            >
+                              <div className="accordion-body">
+                                <ul className="d-flex column-gap-5 fw-semibold flex-wrap">
+                                  <li>
+                                    <i className="bi bi-filetype-jsx"></i>{' '}
+                                    Bootstrap
+                                  </li>
+                                  <li>
+                                    <i className="bi bi-filetype-jsx"></i>{' '}
+                                    React.js
+                                  </li>
+                                  <li>
+                                    <i className="bi bi-filetype-tsx"></i>{' '}
+                                    TypeScript
+                                  </li>
+                                  <li>
+                                    <i className="bi bi-filetype-scss"></i>{' '}
+                                    Styled Components
+                                  </li>
+                                  <li>
+                                    <i className="bi bi-archive"></i> Redux.js
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
 
-                      {/* Accordion Item */}
-                      <div className="accordion-item">
-                        <h2 className="accordion-header">
-                          <button
-                            className="accordion-button collapsed fw-semibold"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#accordionchallenges"
-                            aria-expanded="false"
-                            aria-controls="accordionchallenges"
-                          >
-                            <i className="bi bi-file-code me-2"></i>Challenges
-                          </button>
-                        </h2>
-                        <div
-                          id="accordionchallenges"
-                          className="accordion-collapse collapse"
-                          data-bs-parent="#accordionwebmotorsparent"
-                        >
-                          <div className="accordion-body">
-                            <ol>
-                              <li>
-                                Using and handling data through the{' '}
-                                <span className="text-danger">
-                                  Fetch function
-                                </span>
-                                , which I knew very little about. I managed,{' '}
-                                <span className="text-danger">
-                                  only by studying a lot
-                                </span>
-                                , to learn how to use it to retrieve data coming
-                                from the link headers and use it to render the
-                                correct sales page for each car.
-                              </li>
-                              <li>
-                                Creating responsiveness without any assistance
-                                was a big challenge, since with each new
-                                implementation I had to test each version of the
-                                site in order to discover new instabilities.
-                              </li>
-                            </ol>
+                          {/* Accordion Item Challenges */}
+                          <div className="accordion-item">
+                            <h2 className="accordion-header">
+                              <button
+                                className="accordion-button collapsed fw-semibold"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#accordionchallenges"
+                                aria-expanded="false"
+                                aria-controls="accordionchallenges"
+                              >
+                                <i className="bi bi-file-code me-2"></i>
+                                Challenges
+                              </button>
+                            </h2>
+                            <div
+                              id="accordionchallenges"
+                              className="accordion-collapse collapse"
+                              data-bs-parent="#accordionwebmotorsparent"
+                            >
+                              <div className="accordion-body">
+                                <ol>
+                                  <li>
+                                    Using and handling data through the{' '}
+                                    <span className="text-danger">
+                                      Fetch function
+                                    </span>
+                                    , which I knew very little about. I managed,{' '}
+                                    <span className="text-danger">
+                                      only by studying a lot
+                                    </span>
+                                    , to learn how to use it to retrieve data
+                                    coming from the link headers and use it to
+                                    render the correct sales page for each car.
+                                  </li>
+                                  <li>
+                                    Creating responsiveness without any
+                                    assistance was a big challenge, since with
+                                    each new implementation I had to test each
+                                    version of the site in order to discover new
+                                    instabilities.
+                                  </li>
+                                </ol>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Container Login Page */}
-            <div
-              className="tab-pane fade"
-              id="loginpage"
-              role="tabpanel"
-              aria-labelledby="profile-tab"
-              tabIndex={0}
-            >
-              <div className="container py-2">
-                <div className="row align-items-center justify-content-center text-center">
-                  <div className="col-lg-6">
-                    <h2 className="mt-3 mt-md-0">
-                      <span className="text-altdark fw-bold">Login Page</span>
-                    </h2>
-                    <p className="lead text-muted fw-semibold my-3">
-                      Explore our website and experience seamless access with
-                      our login feature. Join us to unlock exclusive content and
-                      personalized experiences!
-                    </p>
-
-                    <div className="d-flex justify-content-center column-gap-3">
-                      <a
-                        target="_blank"
-                        href="https://login-page-two-sand.vercel.app/"
-                        className="btn btn-outline-altdark fw-semibold"
-                        rel="noreferrer"
-                      >
-                        Login Page
-                      </a>
-                      <a
-                        target="_blank"
-                        href="https://login-page-two-sand.vercel.app/"
-                        className="btn btn-altdark fw-semibold"
-                        rel="noreferrer"
-                      >
-                        Repository
-                      </a>
-                    </div>
-                    <small className="mt-2 d-block fw-semibold text-muted">
-                      <time dateTime="2023-02-11">11, November, 2023</time>
-                    </small>
-                  </div>
-                  <div className="col-lg-6">
-                    {/* Carousel */}
-                    <div
-                      id="carouselloginpage"
-                      className="carousel carousel-dark shadow slide"
-                    >
-                      <div className="carousel-indicators">
-                        <button
-                          type="button"
-                          data-bs-target="#carouselloginpage"
-                          data-bs-slide-to="0"
-                          className="active"
-                          aria-current="true"
-                          aria-label="Slide 1"
-                        ></button>
-                        <button
-                          type="button"
-                          data-bs-target="#carouselloginpage"
-                          data-bs-slide-to="1"
-                          aria-label="Slide 2"
-                        ></button>
-                      </div>
-                      <div className="carousel-inner">
-                        <div className="carousel-item active">
-                          <img
-                            className="img-fluid rounded shadow"
-                            src={LoginPageCA}
-                            alt=""
-                          />
-                          <div className="carousel-caption d-none d-md-block">
-                            <h5 className="shadow bg-white rounded p-2">
-                              Create Account
-                            </h5>
-                          </div>
-                        </div>
-                        <div className="carousel-item">
-                          <img
-                            className="img-fluid rounded shadow"
-                            src={LoginPageSI}
-                            alt=""
-                          />
-                          <div className="carousel-caption d-none d-md-block">
-                            <h5 className="shadow bg-white rounded p-2">
-                              Sing In
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <button
-                        className="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carouselloginpage"
-                        data-bs-slide="prev"
-                      >
-                        <span
-                          className="carousel-control-prev-icon"
-                          aria-hidden="true"
-                        ></span>
-                        <span className="visually-hidden">Previous</span>
-                      </button>
-                      <button
-                        className="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carouselloginpage"
-                        data-bs-slide="next"
-                      >
-                        <span
-                          className="carousel-control-next-icon"
-                          aria-hidden="true"
-                        ></span>
-                        <span className="visually-hidden">Next</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                {/* Acordion */}
-                <div className="row mt-2">
-                  <div className="col">
-                    <div
-                      className="accordion accordion-flush"
-                      id="accordionloginparent"
-                    >
-                      {/* Accordion Item */}
-                      <div className="accordion-item">
-                        <h2 className="accordion-header">
-                          <button
-                            className="accordion-button collapsed fw-semibold"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#accordiontecnologies"
-                            aria-expanded="false"
-                            aria-controls="accordiontecnologies"
-                          >
-                            <i className="bi bi-file-code me-2"></i>Main
-                            technologies
-                          </button>
-                        </h2>
-                        <div
-                          id="accordiontecnologies"
-                          className="accordion-collapse collapse"
-                          data-bs-parent="#accordionloginparent"
-                        >
-                          <div className="accordion-body">
-                            <ul className="d-flex column-gap-5 fw-semibold flex-wrap">
-                              <li>
-                                <i className="bi bi-filetype-jsx"></i> React.js
-                              </li>
-                              <li>
-                                <i className="bi bi-filetype-tsx"></i>{' '}
-                                TypeScript
-                              </li>
-                              <li>
-                                <i className="bi bi-filetype-scss"></i> Styled
-                                Components
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Accordion Item */}
-                      <div className="accordion-item">
-                        <h2 className="accordion-header">
-                          <button
-                            className="accordion-button collapsed fw-semibold"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#accordionchallenges"
-                            aria-expanded="false"
-                            aria-controls="accordionchallenges"
-                          >
-                            <i className="bi bi-file-code me-2"></i>Challenges
-                          </button>
-                        </h2>
-                        <div
-                          id="accordionchallenges"
-                          className="accordion-collapse collapse"
-                          data-bs-parent="#accordionloginparent"
-                        >
-                          <div className="accordion-body">
-                            <ol>
-                              <li>
-                                While still learning about{' '}
-                                <span className="text-altdark">
-                                  styled components
-                                </span>
-                                , I had many problems integrating it with
-                                typescript, problems that I had to learn to
-                                solve on my own.
-                              </li>
-                              <li>
-                                Creating{' '}
-                                <span className="text-altdark">
-                                  responsiveness
-                                </span>{' '}
-                                without any assistance was a big challenge,
-                                since with each new implementation I had to test
-                                each version of the site in order to discover
-                                new instabilities.
-                              </li>
-                            </ol>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Container To Do App */}
-            <div
-              className="tab-pane fade"
-              id="todoapp"
-              role="tabpanel"
-              aria-labelledby="contact-tab"
-              tabIndex={0}
-            >
-              <div className="container py-2">
-                <div className="row align-items-center justify-content-center text-center">
-                  <div className="col-lg-6">
-                    <h2 className="mt-3 mt-md-0">
-                      <span className="text-primary fw-bold">To Do App</span>
-                    </h2>
-                    <p className="lead text-muted fw-semibold my-3">
-                      Discover efficiency with our to-do list website! Organize
-                      tasks, set reminders, and boost productivity. Visit us
-                      today for a seamless experience!
-                    </p>
-
-                    <div className="d-flex justify-content-center column-gap-3">
-                      <a
-                        target="_blank"
-                        href="https://lista-de-afazeres-alpha.vercel.app/"
-                        className="btn btn-outline-primary fw-semibold"
-                        rel="noreferrer"
-                      >
-                        To Do App
-                      </a>
-                      <a
-                        target="_blank"
-                        href="https://github.com/TallysonFreitas/Lista-De-Afazeres/tree/main"
-                        className="btn btn-primary fw-semibold"
-                        rel="noreferrer"
-                      >
-                        Repository
-                      </a>
-                    </div>
-                    <small className="mt-2 d-block fw-semibold text-muted">
-                      <time dateTime="2023-27-10">27, Octuber, 2023</time>
-                    </small>
-                  </div>
-                  <div className="col-lg-6">
-                    {/* Carousel */}
-                    <div
-                      id="carouseltodo"
-                      className="carousel carousel-dark shadow slide"
-                    >
-                      <div className="carousel-indicators">
-                        <button
-                          type="button"
-                          data-bs-target="#carouseltodo"
-                          data-bs-slide-to="0"
-                          className="active"
-                          aria-current="true"
-                          aria-label="Slide 1"
-                        ></button>
-                        <button
-                          type="button"
-                          data-bs-target="#carouseltodo"
-                          data-bs-slide-to="1"
-                          aria-label="Slide 2"
-                        ></button>
-                      </div>
-                      <div className="carousel-inner">
-                        <div className="carousel-item active">
-                          <img
-                            className="img-fluid rounded shadow"
-                            src={ToDoLight}
-                            alt=""
-                          />
-                          <div className="carousel-caption d-none d-md-block">
-                            <h5 className="shadow bg-white rounded p-2">
-                              Light Mode
-                            </h5>
-                          </div>
-                        </div>
-                        <div className="carousel-item">
-                          <img
-                            className="img-fluid rounded shadow"
-                            src={ToDoDark}
-                            alt=""
-                          />
-                          <div className="carousel-caption d-none d-md-block">
-                            <h5 className="shadow bg-white rounded p-2">
-                              Dark Mode
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <button
-                        className="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carouseltodo"
-                        data-bs-slide="prev"
-                      >
-                        <span
-                          className="carousel-control-prev-icon"
-                          aria-hidden="true"
-                        ></span>
-                        <span className="visually-hidden">Previous</span>
-                      </button>
-                      <button
-                        className="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carouseltodo"
-                        data-bs-slide="next"
-                      >
-                        <span
-                          className="carousel-control-next-icon"
-                          aria-hidden="true"
-                        ></span>
-                        <span className="visually-hidden">Next</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                {/* Acordion */}
-                <div className="row mt-2">
-                  <div className="col">
-                    <div
-                      className="accordion accordion-flush"
-                      id="accordiontodoparent"
-                    >
-                      {/* Accordion Item */}
-                      <div className="accordion-item">
-                        <h2 className="accordion-header">
-                          <button
-                            className="accordion-button collapsed fw-semibold"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#accordiontecnologies"
-                            aria-expanded="false"
-                            aria-controls="accordiontecnologies"
-                          >
-                            <i className="bi bi-file-code me-2"></i>Main
-                            technologies
-                          </button>
-                        </h2>
-                        <div
-                          id="accordiontecnologies"
-                          className="accordion-collapse collapse"
-                          data-bs-parent="#accordiontodoparent"
-                        >
-                          <div className="accordion-body">
-                            <ul className="d-flex column-gap-5 fw-semibold flex-wrap">
-                              <li>
-                                <i className="bi bi-filetype-jsx"></i> React.js
-                              </li>
-                              <li>
-                                <i className="bi bi-filetype-tsx"></i>{' '}
-                                TypeScript
-                              </li>
-                              <li>
-                                <i className="bi bi-filetype-scss"></i> Styled
-                                Components
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Accordion Item */}
-                      <div className="accordion-item">
-                        <h2 className="accordion-header">
-                          <button
-                            className="accordion-button collapsed fw-semibold"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#accordionchallenges"
-                            aria-expanded="false"
-                            aria-controls="accordionchallenges"
-                          >
-                            <i className="bi bi-file-code me-2"></i>Challenges
-                          </button>
-                        </h2>
-                        <div
-                          id="accordionchallenges"
-                          className="accordion-collapse collapse"
-                          data-bs-parent="#accordiontodoparent"
-                        >
-                          <div className="accordion-body">
-                            <ol>
-                              <li>
-                                my little experience in{' '}
-                                <span className="text-primary">React.js</span>{' '}
-                                made things difficult in this project. Having to
-                                go back to researching solutions to problems
-                                that I consider{' '}
-                                <span className="text-primary">
-                                  simple today
-                                </span>
-                                .
-                              </li>
-                              <li>
-                                I had to learn a lot about{' '}
-                                <span className="text-primary">Typescript</span>{' '}
-                                here, how to type functions, variables,
-                                components. It was a{' '}
-                                <span className="text-primary">
-                                  decisive moment
-                                </span>{' '}
-                                and one of the most important so far.
-                              </li>
-                            </ol>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </>
+            ))}
           </div>
         </div>
       </div>

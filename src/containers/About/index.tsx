@@ -47,40 +47,6 @@ const About = () => {
             </picture>
           </div>
         </div>
-        {/* My academic journey column */}
-        <div className="row align-items-center flex-row-reverse">
-          <div className="col-lg-8 text-center">
-            <h3 className="fw-semibold mb-3">My academic journey</h3>
-            <p className="lead fs-6 text-muted fw-semibold" data-aos="fade-up">
-              When I started studying programming at my college -{' '}
-              <span className="text-success">
-                Systems Analysis and Development
-              </span>
-              - in 2023 I became fascinated with the area of information
-              technology, so much so that I looked for new ways to implement
-              myself in the market through courses -{' '}
-              <span className="text-success">Full Stack Python EBAC</span>
-            </p>
-          </div>
-          <div className="col-lg-4 d-flex justify-content-center">
-            <picture>
-              <source
-                className="img-fluid"
-                media="(max-width:992px)"
-                srcSet={SapiensFemaleMn}
-                data-aos="fade-right"
-                data-aos-duration="1000"
-              />
-              <img
-                className="img-fluid"
-                src={SapiensFemaleLg}
-                alt="to study"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-              />
-            </picture>
-          </div>
-        </div>
       </div>
     </section>
   )
