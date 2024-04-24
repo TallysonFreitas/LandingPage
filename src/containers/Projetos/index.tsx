@@ -6,6 +6,7 @@ import loginPageCA from '../../assets/images/loginPage-CreateAccount-compress.jp
 import loginPageSI from '../../assets/images/loginPage-singIn-compress.jpg'
 import financessHome from '../../assets/images/Financess-HomePage-min.png'
 import financessAnalytics from '../../assets/images/Financess-AnalyticsPage-min.png'
+import eplayHome from '../../assets/images/EPlay-home-min.jpg'
 
 export type ProjectType = {
   name: string
@@ -19,18 +20,55 @@ export type ProjectType = {
     repository: string
     date: string
     imgs: string[]
+    tecnologies: string
   }
 }
 
 const Projetos = () => {
   const projetos: ProjectType[] = [
     {
-      name: 'Financess',
+      name: 'EGames',
       id: 1,
       defaultSelect: true,
+      projectColor: 'lightDark',
+      target: 'egames',
+      body: {
+        tecnologies:
+          'O projeto foi implementado usando a bibliteca React.js, usando tambem usando a linguagem de programacao Typescript, para a criacao de componentes estilizados foi feita com Styled-components e para facilitar e padronizar o estilos CSS foi utilizada a biblioteca Bootstrap.',
+        repository: 'https://github.com/TallysonFreitas/Loja-jogos',
+        deploy: 'https://loja-jogos.vercel.app/',
+        description:
+          'Discover the path to a more prosperous financial life. Visit our website now and transform your finances forever!',
+        date: '24, April, 2024',
+        imgs: [eplayHome, financessAnalytics]
+      }
+    },
+    {
+      name: 'EFood',
+      id: 2,
+      defaultSelect: false,
+      projectColor: 'altSalmon',
+      target: 'efood',
+      body: {
+        tecnologies:
+          'O projeto foi implementado usando a bibliteca React.js, usando tambem usando a linguagem de programacao Typescript, para a criacao de componentes estilizados foi feita com Styled-components e para facilitar e padronizar o estilos CSS foi utilizada a biblioteca Bootstrap.',
+        repository: 'https://github.com/TallysonFreitas/Efood',
+        deploy: 'https://efood-three-nu.vercel.app/',
+        description:
+          'Discover the path to a more prosperous financial life. Visit our website now and transform your finances forever!',
+        date: '18, April, 2024',
+        imgs: [financessHome, financessAnalytics]
+      }
+    },
+    {
+      name: 'Financess',
+      id: 3,
+      defaultSelect: false,
       projectColor: 'success',
       target: 'financess',
       body: {
+        tecnologies:
+          'O projeto foi implementado usando a bibliteca React.js, usando tambem usando a linguagem de programacao Typescript, para a criacao de componentes estilizados foi feita com Styled-components e para facilitar e padronizar o estilos CSS foi utilizada a biblioteca Bootstrap.',
         repository: 'https://github.com/TallysonFreitas/Financess',
         deploy: 'https://financess.vercel.app/',
         description:
@@ -41,11 +79,13 @@ const Projetos = () => {
     },
     {
       name: 'WebMotors',
-      id: 2,
+      id: 4,
       defaultSelect: false,
       projectColor: 'danger',
       target: 'webmotors',
       body: {
+        tecnologies:
+          'O projeto foi implementado usando a bibliteca React.js, usando tambem usando a linguagem de programacao Typescript, para a criacao de componentes estilizados foi feita com Styled-components e para a centralizacao das informacoes foi usado o Redux.js',
         repository: 'https://github.com/TallysonFreitas/webmotors',
         deploy: 'https://webmotors-clone.vercel.app/',
         description:
@@ -56,11 +96,13 @@ const Projetos = () => {
     },
     {
       name: 'Login Page',
-      id: 3,
+      id: 5,
       defaultSelect: false,
       projectColor: 'altdark',
       target: 'loginpage',
       body: {
+        tecnologies:
+          'O projeto foi implementado usando a bibliteca React.js, usando tambem usando a linguagem de programacao Typescript e para a criacao de componentes estilizados foi feita com Styled-components.',
         repository: 'https://github.com/TallysonFreitas/Login-Page',
         deploy: 'https://login-page-two-sand.vercel.app/',
         description:
@@ -72,11 +114,13 @@ const Projetos = () => {
     {
       name: 'To Do App',
 
-      id: 4,
+      id: 6,
       defaultSelect: false,
       projectColor: 'primary',
       target: 'todoapp',
       body: {
+        tecnologies:
+          'O projeto foi implementado usando a bibliteca React.js, usando tambem usando a linguagem de programacao Typescript e para a criacao de componentes estilizados foi feita com Styled-components.',
         repository: 'https://github.com/TallysonFreitas/Lista-De-Afazeres',
         deploy: 'https://github.com/TallysonFreitas/Lista-De-Afazeres',
         description:
@@ -199,25 +243,15 @@ const Projetos = () => {
                               <img
                                 className="img-fluid rounded shadow"
                                 src={project.body.imgs[0]}
-                                alt=""
+                                alt={`main page of the website ${project.name}`}
                               />
-                              <div className="carousel-caption d-none d-md-block">
-                                <h5 className="shadow bg-white rounded p-2">
-                                  Home
-                                </h5>
-                              </div>
                             </div>
                             <div className="carousel-item">
                               <img
                                 className="img-fluid rounded shadow"
                                 src={project.body.imgs[1]}
-                                alt=""
+                                alt={`secondary page of the website: ${project.name}`}
                               />
-                              <div className="carousel-caption d-none d-md-block">
-                                <h5 className="shadow bg-white rounded p-2">
-                                  Analytics
-                                </h5>
-                              </div>
                             </div>
                           </div>
                           <button
@@ -277,23 +311,8 @@ const Projetos = () => {
                               <div className="accordion-body">
                                 <ul className="d-flex column-gap-5 fw-semibold flex-wrap">
                                   <li>
-                                    <i className="bi bi-filetype-jsx"></i>{' '}
-                                    Bootstrap
-                                  </li>
-                                  <li>
-                                    <i className="bi bi-filetype-jsx"></i>{' '}
-                                    React.js
-                                  </li>
-                                  <li>
-                                    <i className="bi bi-filetype-tsx"></i>{' '}
-                                    TypeScript
-                                  </li>
-                                  <li>
-                                    <i className="bi bi-filetype-scss"></i>{' '}
-                                    Styled Components
-                                  </li>
-                                  <li>
-                                    <i className="bi bi-archive"></i> Redux.js
+                                    <i className="bi bi-archive"></i>{' '}
+                                    {project.body.tecnologies}
                                   </li>
                                 </ul>
                               </div>
