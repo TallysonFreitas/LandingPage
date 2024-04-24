@@ -7,6 +7,14 @@ import Row from 'react-bootstrap/Row'
 import Modal from 'react-bootstrap/Modal'
 
 function FormBootstrap() {
+  const [email, setEmail] = useState({
+    email: '',
+    firstName: '',
+    lastName: '',
+    about: '',
+    message: ''
+  })
+
   // Form
   const [validated, setValidated] = useState(false)
   const [messageSent, setMessageSent] = useState(false)
@@ -20,6 +28,7 @@ function FormBootstrap() {
       event.preventDefault()
       handleShow()
       setMessageSent(true)
+      fetch('')
     }
 
     setValidated(true)
@@ -39,26 +48,56 @@ function FormBootstrap() {
           <Row className="mb-3">
             <Form.Group as={Col} md="6" controlId="validationCustom01">
               <Form.Label>First name</Form.Label>
-              <Form.Control required type="text" placeholder="First name" />
+              <Form.Control
+                required
+                type="text"
+                placeholder="First name"
+                value={email.firstName}
+                onChange={(e) => {
+                  setEmail({ ...email, firstName: e.target.value })
+                }}
+              />
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
             <Form.Group as={Col} md="6" controlId="validationCustom02">
               <Form.Label>Last name</Form.Label>
-              <Form.Control required type="text" placeholder="Last name" />
+              <Form.Control
+                required
+                type="text"
+                placeholder="Last name"
+                value={email.lastName}
+                onChange={(e) => {
+                  setEmail({ ...email, lastName: e.target.value })
+                }}
+              />
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
           </Row>
           <Row className="mb-3">
             <Form.Group as={Col} md="12" controlId="validationEmail">
               <Form.Label>Email</Form.Label>
-              <Form.Control required type="email" placeholder="Your email" />
+              <Form.Control
+                required
+                type="email"
+                placeholder="Your email"
+                value={email.email}
+                onChange={(e) => {
+                  setEmail({ ...email, email: e.target.value })
+                }}
+              />
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
           </Row>
           <Row className="mb-3">
             <Form.Group as={Col} md="12" controlId="validationAbout">
               <Form.Label>About</Form.Label>
-              <Form.Select aria-label="Default select example">
+              <Form.Select
+                aria-label="Default select example"
+                value={email.about}
+                onChange={(e) => {
+                  setEmail({ ...email, about: e.target.value })
+                }}
+              >
                 <option>Open this select menu</option>
                 <option value="freelance">
                   I want you to do a freelance project
@@ -92,6 +131,10 @@ function FormBootstrap() {
                   style={{ height: '120px' }}
                   required
                   minLength={20}
+                  value={email.message}
+                  onChange={(e) => {
+                    setEmail({ ...email, message: e.target.value })
+                  }}
                 />
               </FloatingLabel>
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
