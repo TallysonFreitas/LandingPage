@@ -29,7 +29,7 @@ const Header = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a href="#intro" className="nav-link active fw-semibold">
+                <a href="#intro" className="nav-link fw-semibold">
                   Home
                 </a>
               </li>
