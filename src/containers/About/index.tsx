@@ -1,7 +1,5 @@
 import ImgSapiensMaleMn from '../../assets/images/sapiens-man-mn.png'
 import ImgSapiensMaleLg from '../../assets/images/sapiens-man-lg.png'
-import SapiensFemaleMn from '../../assets/images/sapiens-woman-mn.png'
-import SapiensFemaleLg from '../../assets/images/sapiens-woman-lg.png'
 
 const About = () => {
   return (
