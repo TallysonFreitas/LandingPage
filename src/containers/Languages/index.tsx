@@ -72,7 +72,10 @@ const Languages = () => {
               </div>
             </div>
             <div className="col-6 col-sm-3 col-lg-2 ">
-              <LinguagemIcon linguagem="HTML5">
+              <LinguagemIcon
+                language="HTML5"
+                description="É uma linguagem de marcação utilizada na construção de páginas na Web."
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -87,7 +90,10 @@ const Languages = () => {
               </LinguagemIcon>
             </div>
             <div className="col-6 col-sm-3 col-lg-2 ">
-              <LinguagemIcon linguagem="CSS3">
+              <LinguagemIcon
+                language="CSS3"
+                description="É um mecanismo para adicionar estilos a uma página web."
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -105,7 +111,10 @@ const Languages = () => {
               </LinguagemIcon>
             </div>
             <div className="col-6 col-sm-3 col-lg-2 ">
-              <LinguagemIcon linguagem="JavaScript">
+              <LinguagemIcon
+                language="JavaScript"
+                description="É uma linguagem de programação interpretada estruturada, de script em alto nível."
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -120,7 +129,10 @@ const Languages = () => {
               </LinguagemIcon>
             </div>
             <div className="col-6 col-sm-3 col-lg-2 ">
-              <LinguagemIcon linguagem="React">
+              <LinguagemIcon
+                language="React"
+                description="É uma biblioteca front-end JavaScript de código aberto."
+              >
                 <svg
                   fill="#534dfc"
                   xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +147,10 @@ const Languages = () => {
               </LinguagemIcon>
             </div>
             <div className="col-6 col-sm-3 col-lg-2 ">
-              <LinguagemIcon linguagem="Sass">
+              <LinguagemIcon
+                language="Sass"
+                description="É uma linguagem de folhas de estilo."
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -150,7 +165,10 @@ const Languages = () => {
               </LinguagemIcon>
             </div>
             <div className="col-6 col-sm-3 col-lg-2 ">
-              <LinguagemIcon linguagem="TypeScript">
+              <LinguagemIcon
+                language="TypeScript"
+                description="É um superconjunto sintático estrito de JavaScript"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -165,14 +183,20 @@ const Languages = () => {
               </LinguagemIcon>
             </div>
             <div className="col-6 col-sm-3 col-lg-2 ">
-              <LinguagemIcon linguagem="Styled-components">
+              <LinguagemIcon
+                language="Styled-components"
+                description="É uma biblioteca poderosa para estilização de componentes em aplicações React."
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 4 24 15">
                   <path d="m16.214 6.762-.075.391c-.116.741-.074.953.244 1.228l.307.254-.318 1.418c-.19.846-.423 1.555-.571 1.788-.127.201-.275.497-.307.656-.053.19-.233.381-.508.55-.243.138-.72.508-1.058.805-.27.243-.456.392-.557.456l-.33.261c-.106.17-.166.307-.189.411-.023.107-.01.178.024.23.033.05.09.085.168.107a.954.954 0 0 0 .282.023 3 3 0 0 0 .632-.112c.07-.019.125-.037.173-.053.074-.091.245-.263.548-.562.804-.793 1.111-1.227.794-1.11-.117.042-.064-.064.137-.276.424-.413.667-1.037 1.175-2.994.402-1.545.402-1.567.698-1.567.139 0 .532.024.532.024v-1.928h-.902zm3.839 3.165c-.064 0-.17.096-.233.202-.116.19.021.306 1.767 1.396 1.037.657 1.873 1.217 1.852 1.26-.021.031-.868.582-1.883 1.217-1.842 1.142-1.852 1.153-1.683 1.386.212.275 0 .37 2.391-1.122l1.736-1.111v-.836l-1.937-1.196c-1.047-.656-1.957-1.185-2.01-1.196zm-16.085.117c-.053 0-.963.54-2.01 1.185l-1.958 1.196v.836l1.947 1.217c1.08.666 1.99 1.217 2.032 1.217s.127-.096.212-.212c.127-.201.02-.286-1.768-1.418-1.703-1.069-1.883-1.217-1.713-1.333.106-.074.91-.572 1.778-1.111 1.979-1.217 1.873-1.133 1.714-1.387-.063-.105-.17-.2-.233-.19zm8.684.023c-.292-.002-.92.443-2.8 1.978-.081.193-.088.326-.051.412.024.059.068.1.129.13.06.03.138.048.224.055.171.015.373-.012.536-.044l.11-.025a.386.386 0 0 1 .144-.118c.116-.064.603-.508 1.09-.984.857-.868 1.058-1.26.709-1.387a.24.24 0 0 0 -.09-.017zm2.196.603c-.257.007-.72.305-1.513.938-.398.323-.65.497-.785.533l-.524.414c-.197.36-.226.583-.174.706a.25.25 0 0 0 .138.134.644.644 0 0 0 .24.045 2.18 2.18 0 0 0 .58-.085 3.466 3.466 0 0 0 .291-.092l.029-.012.053-.028c.1-.129.33-.372.618-.652.91-.878 1.375-1.502 1.28-1.735-.043-.113-.117-.17-.233-.166zm-2.424 1.08c-.074.008-.24.136-.539.398-.432.382-.903.602-1.066.504a3.97 3.97 0 0 1 -.114.024c-.166.033-.373.06-.558.045a.708.708 0 0 1 -.252-.063.337.337 0 0 1 -.168-.17c-.037-.09-.037-.202.005-.345l-.65.534-1.471 1.217v1.973l4.82-3.797a.41.41 0 0 1 .016-.123c.037-.134.035-.202-.023-.196zm2.074.639c-.073 0-.195.103-.39.31-.265.283-.682.557-.903.613l-.034.018a2.191 2.191 0 0 1 -.11.042c-.06.02-.138.044-.228.068-.18.049-.404.094-.604.089a.732.732 0 0 1 -.275-.054.344.344 0 0 1 -.184-.18c-.058-.139-.035-.334.092-.611l-4.252 3.349v1.205h1.868l3.962-3.112c.103-.114.258-.27.467-.465.56-.519.687-.698.687-.963 0-.206-.023-.31-.096-.31zm.943 1.95-.339.338c-.19.18-.529.402-.761.497l-.046.02-.003.005-.01.01c-.009.007-.013.008-.02.011a3.432 3.432 0 0 1 -.282.093 3.058 3.058 0 0 1 -.65.115 1.035 1.035 0 0 1 -.31-.027.364.364 0 0 1 -.218-.144c-.048-.074-.062-.173-.035-.295a1.11 1.11 0 0 1 .095-.25l-3.197 2.526h4.252l.508-.582c.698-.814 1.016-1.396 1.016-1.894z" />
                 </svg>
               </LinguagemIcon>
             </div>
             <div className="col-6 col-sm-3 col-lg-2 ">
-              <LinguagemIcon linguagem="Redux.js">
+              <LinguagemIcon
+                language="Redux.js"
+                description="É uma biblioteca JavaScript de código aberto para gerenciar o estado do aplicativo."
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="100"
@@ -186,7 +210,10 @@ const Languages = () => {
               </LinguagemIcon>
             </div>
             <div className="col-6 col-sm-3 col-lg-2 ">
-              <LinguagemIcon linguagem="Bootstrap">
+              <LinguagemIcon
+                language="Bootstrap"
+                description="É um framework web para desenvolvimento de componentes de interface e front-end."
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="100"
@@ -201,7 +228,10 @@ const Languages = () => {
               </LinguagemIcon>
             </div>
             <div className="col-6 col-sm-3 col-lg-2 ">
-              <LinguagemIcon linguagem="Cypress">
+              <LinguagemIcon
+                language="Cypress"
+                description="É uma ferramenta de automação de teste frontend para testes de regressão de aplicações."
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path d="m11.998 0c-6.632 0-11.998 5.367-11.998 12a11.992 11.992 0 0 0 12 12c6.633 0 12-5.367 12-12-.001-6.633-5.412-12-12.002-12zm-5.628 14.575c.392.523.916.742 1.657.742.35 0 .699-.044 1.004-.175.306-.13.655-.306 1.09-.567l1.223 1.745c-1.003.83-2.138 1.222-3.447 1.222-1.048 0-1.92-.218-2.705-.654a4.393 4.393 0 0 1 -1.746-1.92c-.392-.83-.611-1.79-.611-2.925 0-1.09.219-2.094.61-2.923a4.623 4.623 0 0 1 1.748-2.007c.741-.48 1.657-.698 2.661-.698.699 0 1.353.087 1.877.305a5.64 5.64 0 0 1 1.614.96l-1.222 1.658a4.786 4.786 0 0 0 -1.003-.568c-.305-.13-.698-.174-1.048-.174-1.483 0-2.225 1.134-2.225 3.446-.043 1.18.175 2.008.524 2.532h-.001zm12 2.705c-.436 1.353-1.091 2.357-2.008 3.098-.916.743-2.138 1.135-3.665 1.266l-.305-2.05c1.003-.132 1.745-.35 2.225-.7.174-.13.524-.523.524-.523l-3.622-11.607h3.01l2.095 8.683 2.226-8.683h2.923z" />
                 </svg>
