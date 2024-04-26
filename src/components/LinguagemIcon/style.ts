@@ -56,6 +56,10 @@ export const ContainerLinguagemItem = styled.div`
       font-size: 16px;
       min-height: 94px;
       pointer-events: none;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
     }
   }
 `
