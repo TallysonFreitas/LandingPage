@@ -8,9 +8,10 @@
 
 $custom-theme-colors:(
   "altlight":#2A172D,
-  "altdark": #522192,
+  "altdark": #653e99,
   "altSalmon": #E66767,
-  "lightDark": #252525
+  "lightDark": #999999,
+  "whited": #e5e5e5
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
