@@ -27,3 +27,11 @@ export const Title = styled.h2`
     font-size: 1em;
   }
 `
+
+export const SubTitle = styled.h3`
+  span {
+    font-family: 'Bree Serif', serif;
+    font-style: normal;
+    font-size: 2.5em;
+  }
+`

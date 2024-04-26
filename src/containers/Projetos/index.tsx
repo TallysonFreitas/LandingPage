@@ -184,13 +184,13 @@ const Projetos = () => {
                   <div className="container py-2">
                     <div className="row align-items-center justify-content-center text-center">
                       <div className="col-lg-6">
-                        <S.Title className="mt-3 mt-md-0">
+                        <S.SubTitle className="mt-3 mt-md-0">
                           <span
                             className={`text-${project.projectColor} fw-bold  `}
                           >
                             {project.name}
                           </span>
-                        </S.Title>
+                        </S.SubTitle>
                         <p className="lead text-whited fw-semibold my-3">
                           {project.body.description}
                         </p>
@@ -218,7 +218,7 @@ const Projetos = () => {
                         </small>
                       </div>
                       {/* Carousel */}
-                      <div className="col-lg-6">
+                      <div className="col-lg-6 my-4">
                         <div
                           id={`carousel${project.target}`}
                           className="carousel carousel-dark shadow slide"
