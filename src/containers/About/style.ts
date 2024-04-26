@@ -13,3 +13,14 @@ export const Container = styled.section`
     #131313
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 `
+
+export const Title = styled.h2`
+  font-family: 'Bree Serif', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+
+  span {
+    font-family: 'Bree Serif', serif;
+  }
+`

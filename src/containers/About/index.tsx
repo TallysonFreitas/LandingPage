@@ -1,17 +1,17 @@
 import ImgSapiensMaleMn from '../../assets/images/sapiens-man-mn.png'
 import ImgSapiensMaleLg from '../../assets/images/sapiens-man-lg.png'
-import { Container } from './style'
+import * as S from './style'
 
 const About = () => {
   return (
-    <Container className="bg-light" id="about">
+    <S.Container className="bg-light" id="about">
       <div className="container text-whited">
         {/* Title */}
         <div className="text-center mb-5">
-          <h2 className="fw-bold fs-1">
+          <S.Title className="fw-bold fs-1">
             <span className="text-success">Tallyson</span>
-          </h2>
-          <h2 className="fw-bold fs-1">a little closer.</h2>
+          </S.Title>
+          <S.Title className="fw-bold fs-1">a little closer</S.Title>
         </div>
         {/* Who i am column */}
         <div className="row mb-5 align-items-center ">
@@ -47,7 +47,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </Container>
+    </S.Container>
   )
 }
 
