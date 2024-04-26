@@ -13,7 +13,7 @@ const Languages = () => {
             <span className="text-warning">Programming languages</span>
           </S.Title>
           <div className="row align-items-center">
-            <div className="col-lg-6" data-aos="fade-up">
+            <div className="col-lg-6 mb-3 mt-md-0" data-aos="fade-up">
               <S.SubTitle className="text-whited">Knowledge</S.SubTitle>
               <p className="lead mb-0 text-whited">
                 just considering the ones I have an intermediate level above
