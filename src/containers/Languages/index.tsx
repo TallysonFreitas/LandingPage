@@ -1,20 +1,21 @@
 import LinguagemIcon from '../../components/LinguagemIcon'
+import * as S from './style'
 
 const Languages = () => {
   return (
-    <section className="bg-light" id="languages">
+    <S.Container id="languages">
       <div className="container">
         <div className="text-center">
-          <h2 className="fw-bold fs-1">
-            What I <span className="text-primary">know about</span>
-          </h2>
-          <h2 className="fw-bold fs-1 mb-5">
+          <S.Title className="fw-bold fs-1 text-whited">
+            What I know about
+          </S.Title>
+          <S.Title className="fw-bold fs-1 mb-5 text-whited">
             <span className="text-warning">Programming languages</span>
-          </h2>
+          </S.Title>
           <div className="row align-items-center">
             <div className="col-lg-6" data-aos="fade-up">
-              <h3>Knowledge</h3>
-              <p className="lead mb-0">
+              <S.SubTitle className="text-whited">Knowledge</S.SubTitle>
+              <p className="lead mb-0 text-whited">
                 just considering the ones I have an intermediate level above
               </p>
               <div className="bg-dark">
@@ -209,7 +210,7 @@ const Languages = () => {
           </div>
         </div>
       </div>
-    </section>
+    </S.Container>
   )
 }
 
