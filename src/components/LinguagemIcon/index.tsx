@@ -2,19 +2,24 @@ import { ContainerLinguagemItem } from './style'
 
 const LinguagemIcon = ({
   children,
-  linguagem
+  language,
+  description
 }: {
   children: React.ReactNode
-  linguagem: string
+  language: string
+  description: string
 }) => {
   return (
     <ContainerLinguagemItem
-      title={linguagem}
+      title={language}
       data-aos="zoom-in"
       className="bg-white p-2 rounded shadow mt-3 d-flex"
     >
-      {children}
-      <p className="lead fw-semibold">{linguagem}</p>
+      <div>
+        {children}
+        <h4 className="lead fw-semibold">{language}</h4>
+        <p>{description}</p>
+      </div>
     </ContainerLinguagemItem>
   )
 }
