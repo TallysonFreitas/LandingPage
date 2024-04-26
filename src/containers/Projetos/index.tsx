@@ -7,6 +7,7 @@ import loginPageSI from '../../assets/images/loginPage-singIn-compress.jpg'
 import financessHome from '../../assets/images/Financess-HomePage-min.png'
 import financessAnalytics from '../../assets/images/Financess-AnalyticsPage-min.png'
 import eplayHome from '../../assets/images/EPlay-home-min.jpg'
+import * as S from './style'
 
 export type ProjectType = {
   name: string
@@ -132,15 +133,15 @@ const Projetos = () => {
   ]
 
   return (
-    <section className="bg-white" id="projects">
+    <S.Container id="projects">
       <div className="container">
-        <div className="text-center mb-5">
-          <h2 className="fw-bold fs-1">
-            My personal <span className="text-danger">projects</span>
-          </h2>
-          <h2 className="fw-bold fs-1">
+        <div className="text-center mb-5 text-whited">
+          <S.Title className="fw-bold fs-1">
+            My <span className="text-danger">projects</span>
+          </S.Title>
+          <S.Title className="fw-bold fs-1">
             and <span className="text-danger">challenges in TI.</span>
-          </h2>
+          </S.Title>
         </div>
         <div className="row">
           {/* Tabs */}
@@ -152,7 +153,7 @@ const Projetos = () => {
                     project.projectColor
                   } fw-semibold ${
                     project.defaultSelect === true ? 'active' : ''
-                  }`}
+                  } bg-dark`}
                   id="home-tab"
                   data-bs-toggle="tab"
                   data-bs-target={`#${project.target}`}
@@ -183,14 +184,14 @@ const Projetos = () => {
                   <div className="container py-2">
                     <div className="row align-items-center justify-content-center text-center">
                       <div className="col-lg-6">
-                        <h2 className="mt-3 mt-md-0">
+                        <S.Title className="mt-3 mt-md-0">
                           <span
-                            className={`text-${project.projectColor} fw-bold`}
+                            className={`text-${project.projectColor} fw-bold  `}
                           >
                             {project.name}
                           </span>
-                        </h2>
-                        <p className="lead text-muted fw-semibold my-3">
+                        </S.Title>
+                        <p className="lead text-whited fw-semibold my-3">
                           {project.body.description}
                         </p>
 
@@ -212,12 +213,12 @@ const Projetos = () => {
                             Repository
                           </a>
                         </div>
-                        <small className="mt-2 d-block fw-semibold text-muted">
+                        <small className="my-3 d-block fw-semibold text-whited">
                           <time dateTime="2024-29-02">{project.body.date}</time>
                         </small>
                       </div>
+                      {/* Carousel */}
                       <div className="col-lg-6">
-                        {/* Carousel */}
                         <div
                           id={`carousel${project.target}`}
                           className="carousel carousel-dark shadow slide"
@@ -375,7 +376,7 @@ const Projetos = () => {
           </div>
         </div>
       </div>
-    </section>
+    </S.Container>
   )
 }
 
