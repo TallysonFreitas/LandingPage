@@ -1,10 +1,11 @@
 import ImgSapiensMaleMn from '../../assets/images/sapiens-man-mn.png'
 import ImgSapiensMaleLg from '../../assets/images/sapiens-man-lg.png'
+import { Container } from './style'
 
 const About = () => {
   return (
-    <section className="bg-light" id="about">
-      <div className="container">
+    <Container className="bg-light" id="about">
+      <div className="container text-whited">
         {/* Title */}
         <div className="text-center mb-5">
           <h2 className="fw-bold fs-1">
@@ -13,10 +14,10 @@ const About = () => {
           <h2 className="fw-bold fs-1">a little closer.</h2>
         </div>
         {/* Who i am column */}
-        <div className="row mb-5 align-items-center">
+        <div className="row mb-5 align-items-center ">
           <div className="col-lg-8 text-center">
             <h3 className="fw-semibold mb-3">Who I am</h3>
-            <p className="lead fs-6 text-muted fw-semibold" data-aos="fade-up">
+            <p className="lead fs-6 text-whited fw-semibold" data-aos="fade-up">
               If you are visiting this page, nice to see! my name is Tallyson,
               I&apos;m 21 years old and I&apos;m a street cleaner. I entered the
               profession when I was 18 and since So I stayed here. I&apos;m a
@@ -46,7 +47,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Container>
   )
 }
 
