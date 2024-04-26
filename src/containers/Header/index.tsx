@@ -1,10 +1,12 @@
+import { Container } from './style'
+
 const Header = () => {
   return (
-    <header className="fixed-top">
-      <nav className="navbar navbar-expand-lg bg-white">
+    <Container className="fixed-top">
+      <nav className="navbar navbar-expand-lg">
         <div className="container">
           {/* Brand */}
-          <a className="navbar-brand fw-semibold fs-4" href="/">
+          <a className="navbar-brand fw-semibold fs-4 text-whited" href="/">
             <i className="bi bi-code"></i> Tallyson.dev{' '}
             <i className="bi bi-code-slash"></i>
           </a>
@@ -29,29 +31,35 @@ const Header = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a href="#intro" className="nav-link fw-semibold">
+                <a href="#intro" className="nav-link fw-semibold text-whited">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#about" className="nav-link fw-semibold">
+                <a href="#about" className="nav-link fw-semibold text-whited">
                   About me
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#projects" className="nav-link fw-semibold">
+                <a
+                  href="#projects"
+                  className="nav-link fw-semibold text-whited"
+                >
                   Projects
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#languages" className="nav-link fw-semibold">
+                <a
+                  href="#languages"
+                  className="nav-link fw-semibold text-whited"
+                >
                   Languages
                 </a>
               </li>
               <li>
                 <a
                   href="#contact"
-                  className="btn btn-warning m-2 my-lg-0 fw-semibold"
+                  className="btn btn-outline-whited m-2 my-lg-0 fw-semibold"
                 >
                   Send a message
                 </a>
@@ -60,7 +68,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-    </header>
+    </Container>
   )
 }
 
