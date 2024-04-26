@@ -17,7 +17,7 @@ const LinguagemIcon = ({
     >
       <div>
         {children}
-        <h4 className="lead fw-semibold">{language}</h4>
+        <h4 className="lead">{language}</h4>
         <p>{description}</p>
       </div>
     </ContainerLinguagemItem>

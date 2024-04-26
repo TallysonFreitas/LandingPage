@@ -35,6 +35,8 @@ export const ContainerLinguagemItem = styled.div`
     }
 
     h4 {
+      font-family: 'Bree Serif', serif;
+      font-weight: 400;
       margin-bottom: 80px;
       transition: all 1.5s ease;
       pointer-events: none;
@@ -50,6 +52,8 @@ export const ContainerLinguagemItem = styled.div`
     }
 
     p {
+      padding: 0 4px;
+      font-size: 16px;
       min-height: 94px;
       pointer-events: none;
     }
