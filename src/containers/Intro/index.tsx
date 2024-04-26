@@ -1,38 +1,33 @@
-import { leapfrog } from 'ldrs'
+import { grid } from 'ldrs'
 
 import * as S from './style'
 
-import ImgIntroLg from '../../assets/images/sapiens-lg.png'
-
 const Intro = () => {
-  leapfrog.register()
+  grid.register()
 
   return (
-    <section id="intro">
+    <S.Container id="intro">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-md-6 text-center">
-            <h2 className="fw-bold fs-1">
-              Hello, my name is
-              <span className="text-primary"> Tallyson Freitas </span>
-              and i&apos;m{' '}
-              <span className="text-warning me-3">frontend developer</span>
-            </h2>
-            <p
-              className="lead text-muted fw-semibold fs-6 mt-5"
+          <div className="col-12 text-center my-5">
+            <S.Title className="fw-bold text-whited">Tallyson Freitas</S.Title>
+            <S.Text
+              className="text-whited lead  fw-semibold fs-6 mt-5"
               data-aos="fade-up"
               data-aos-duration="500"
             >
               I&lsquo;m a front end developer ready to deliver the perfect
               interface for your company&lsquo;s website
-            </p>
+            </S.Text>
 
-            <div className="d-flex gap-3 justify-content-center">
+            <div className="d-flex gap-3 justify-content-center mt-4">
               <S.LinkButton
                 type="github"
                 title="clique aqui para visitar meu github"
                 href="https://github.com/TallysonFreitas"
                 target="_blank"
+                data-aos="fade-down"
+                data-aos-duration="1000"
               >
                 <span className="svgContainer">
                   <svg fill="white" viewBox="0 0 496 512" height="1.6em">
@@ -46,6 +41,8 @@ const Intro = () => {
                 target="_blank"
                 type="linkedin"
                 title="clique aqui para visitar meu linkedin"
+                data-aos="fade-down"
+                data-aos-duration="1000"
               >
                 <span className="svgContainer">
                   <svg
@@ -62,27 +59,12 @@ const Intro = () => {
               </S.LinkButton>
             </div>
           </div>
-          <div className="col-md-6">
-            <picture>
-              <source
-                className="img-fluid"
-                media="(max-width:767px)"
-                srcSet={ImgIntroLg}
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              />
-              <img
-                className="img-fluid"
-                src={ImgIntroLg}
-                alt="projetos"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              />
-            </picture>
+          <div className="col-12 d-flex justify-content-center pt-5 mb-5">
+            <l-grid size="110" speed="3.0" color="#e5e5e5"></l-grid>
           </div>
         </div>
       </div>
-    </section>
+    </S.Container>
   )
 }
 
