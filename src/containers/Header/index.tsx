@@ -13,7 +13,7 @@ const Header = () => {
 
           {/* Toggler */}
           <button
-            className="navbar-toggler"
+            className="navbar-toggler bg-whited"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#containerLinksNav"
