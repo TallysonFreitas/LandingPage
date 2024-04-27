@@ -61,7 +61,6 @@ export const LinkButton = styled.a<ButtonType>`
     content: '';
     width: 100%;
     height: 100%;
-    background: ${(props) => (props.type === 'github' ? '#181818' : '#0077b5')};
     z-index: -1;
     border-radius: 10px;
     pointer-events: none;
