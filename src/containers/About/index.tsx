@@ -16,7 +16,9 @@ const About = () => {
         {/* Who i am column */}
         <div className="row mb-5 align-items-center ">
           <div className="col-lg-8 text-center">
-            <S.SubTitle className="mb-3">Who I am</S.SubTitle>
+            <S.SubTitle className="mb-3 text-warning fw-normal">
+              Who am I
+            </S.SubTitle>
             <p className="lead fs-6 text-whited fw-normal" data-aos="fade-up">
               If you are visiting this page, good to see you! My name is
               Tallyson, I&apos;m 21 years old and I&apos;m a programming
