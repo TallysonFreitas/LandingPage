@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import Loader from './components/Loader'
 import About from './containers/About'
 import Contact from './containers/Contact'
@@ -6,6 +7,7 @@ import Header from './containers/Header'
 import Intro from './containers/Intro'
 import Languages from './containers/Languages'
 import Projetos from './containers/Projetos'
+
 import { GlobalStyle } from './themeProvider'
 
 function App() {
@@ -13,15 +15,16 @@ function App() {
 
   setTimeout(() => {
     setIsLoading(false)
-  }, 3000)
+  }, 1500)
   return (
     <>
       <GlobalStyle />
-      <Header />
+
       {isLoading ? (
         <Loader />
       ) : (
         <>
+          <Header />
           <Intro />
           <About />
           <Projetos />
