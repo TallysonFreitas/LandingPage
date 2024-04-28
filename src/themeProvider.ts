@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 section{
-  padding:200px 0 160px;
+  padding:280px 0 160px;
 
   @media(max-width:768px){
     padding:120px 0 80px;
