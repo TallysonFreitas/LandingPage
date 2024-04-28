@@ -35,11 +35,11 @@ const Projetos = () => {
       target: 'egames',
       body: {
         tecnologies:
-          'O projeto foi implementado usando a bibliteca React.js, usando tambem usando a linguagem de programacao Typescript, para a criacao de componentes estilizados foi feita com Styled-components e para facilitar e padronizar o estilos CSS foi utilizada a biblioteca Bootstrap.',
+          'site de jogos com Validação de formulário (Formik & Yup), Responsivo, Sistema de compra, Carrinho, Produtos e listas de produtos. O projeto foi feito utilizando React.js e a lógica do código com Typescript, mas decidi não utilizar nenhuma biblioteca CSS (Bootstrap, TailWind), para melhorar minhas habilidades com Css in js. Todas as requisições do site foram feitas com base em uma API própria e implementadas por meio do Redux.js e seu métodos.',
         repository: 'https://github.com/TallysonFreitas/Loja-jogos',
         deploy: 'https://loja-jogos.vercel.app/',
         description:
-          'Discover the path to a more prosperous financial life. Visit our website now and transform your finances forever!',
+          'Discover incredible adventures in our online game store. Join now and dive into limitless fun!',
         date: '24, April, 2024',
         imgs: [eplayHome, financessAnalytics]
       }
@@ -287,7 +287,7 @@ const Projetos = () => {
                       <div className="col">
                         <div
                           className="accordion accordion-flush"
-                          id={`#carousel${project.target}parent`}
+                          id={`accordion${project.target}parent`}
                         >
                           {/* Accordion Item Main Tecnologies */}
                           <div className="accordion-item">
@@ -296,26 +296,23 @@ const Projetos = () => {
                                 className="accordion-button collapsed fw-semibold"
                                 type="button"
                                 data-bs-toggle="collapse"
-                                data-bs-target="#accordiontecnologies"
+                                data-bs-target={`#accordion${project.target}technologies`}
                                 aria-expanded="false"
-                                aria-controls="accordiontecnologies"
+                                aria-controls={`accordion${project.target}technologies`}
                               >
                                 <i className="bi bi-file-code me-2"></i>Main
                                 technologies
                               </button>
                             </h2>
                             <div
-                              id="accordiontecnologies"
+                              id={`accordion${project.target}technologies`}
                               className="accordion-collapse collapse"
-                              data-bs-parent="#accordionwebmotorsparent"
+                              data-bs-parent={`#accordion${project.target}parent`}
                             >
                               <div className="accordion-body">
-                                <ul className="d-flex column-gap-5 fw-semibold flex-wrap">
-                                  <li>
-                                    <i className="bi bi-archive"></i>{' '}
-                                    {project.body.tecnologies}
-                                  </li>
-                                </ul>
+                                <div className="d-flex column-gap-5 fw-normal flex-wrap">
+                                  <p>{project.body.tecnologies}</p>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -327,7 +324,7 @@ const Projetos = () => {
                                 className="accordion-button collapsed fw-semibold"
                                 type="button"
                                 data-bs-toggle="collapse"
-                                data-bs-target="#accordionchallenges"
+                                data-bs-target={`#accordion${project.target}challenges`}
                                 aria-expanded="false"
                                 aria-controls="accordionchallenges"
                               >
@@ -336,9 +333,9 @@ const Projetos = () => {
                               </button>
                             </h2>
                             <div
-                              id="accordionchallenges"
+                              id={`accordion${project.target}challenges`}
                               className="accordion-collapse collapse"
-                              data-bs-parent="#accordionwebmotorsparent"
+                              data-bs-parent={`#accordion${project.target}parent`}
                             >
                               <div className="accordion-body">
                                 <ol>
