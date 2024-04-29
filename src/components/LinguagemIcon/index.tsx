@@ -13,7 +13,7 @@ const LinguagemIcon = ({
     <ContainerLinguagemItem
       title={language}
       data-aos="zoom-in"
-      className="bg-white p-2 rounded shadow mt-3 d-flex"
+      className="bg-whited p-2 rounded shadow mt-3 d-flex"
     >
       <div>
         {children}
