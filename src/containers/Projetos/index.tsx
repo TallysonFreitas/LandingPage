@@ -7,6 +7,9 @@ import loginPageSI from '../../assets/images/loginPage-singIn-compress.jpg'
 import financessHome from '../../assets/images/Financess-HomePage-min.png'
 import financessAnalytics from '../../assets/images/Financess-AnalyticsPage-min.png'
 import eplayHome from '../../assets/images/EPlay-home-min.jpg'
+import efoodHome from '../../assets/images/EFood-home.png'
+import efoodStore from '../../assets/images/EFood-Store.png'
+
 import * as S from './style'
 
 export type ProjectType = {
@@ -58,7 +61,7 @@ const Projetos = () => {
         description:
           'Discover the path to a more prosperous financial life. Visit our website now and transform your finances forever!',
         date: '18, April, 2024',
-        imgs: [financessHome, financessAnalytics]
+        imgs: [efoodHome, efoodStore]
       }
     },
     {
