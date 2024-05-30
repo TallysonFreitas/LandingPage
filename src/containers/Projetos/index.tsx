@@ -38,7 +38,7 @@ const Projetos = () => {
       target: 'egames',
       body: {
         tecnologies:
-          'site de jogos com Validação de formulário (Formik & Yup), Responsivo, Sistema de compra, Carrinho, Produtos e listas de produtos. O projeto foi feito utilizando React.js e a lógica do código com Typescript, mas decidi não utilizar nenhuma biblioteca CSS (Bootstrap, TailWind), para melhorar minhas habilidades com Css in js. Todas as requisições do site foram feitas com base em uma API própria e implementadas por meio do Redux.js e seu métodos.',
+          'EPlay é uma loja online que possui como objetivo criar um ambiente propicio para a venda de jogos digitais. O projeto consiste em uma loja online de jogos com design responsivo, que possui um sistema de compras, carrinho e formulário de pagamento. EPlay foi desenvolvido com React.js na criação dos componentes, React-Router-DOM na navegação, Typescript como linguagem padrão, Styled-components na estilização, Redux na centralização do Carrinho e na implementação de informações vindas do backend e validação de formulário com Yup e Formik.',
         repository: 'https://github.com/TallysonFreitas/Loja-jogos',
         deploy: 'https://loja-jogos.vercel.app/',
         description:
@@ -55,7 +55,7 @@ const Projetos = () => {
       target: 'efood',
       body: {
         tecnologies:
-          'O projeto foi implementado usando a bibliteca React.js, usando tambem usando a linguagem de programacao Typescript, para a criacao de componentes estilizados foi feita com Styled-components e para facilitar e padronizar o estilos CSS foi utilizada a biblioteca Bootstrap.',
+          'EFood é um site onde cliente e restaurante se encontram e dão “match”. O projeto consiste em uma plataforma de restaurantes e seus respectivos pratos que visa facilitar o encontro do restaurante e cliente. EFood possui design responsivo, sistema de compras, carrinho e formulário de pagamento, foi desenvolvido com React.js na criação dos componentes, React-Router-DOM na navegação, Typescript como linguagem padrão, Styled-components na estilização, Redux na centralização do Carrinho e na implementação de informações vindas do backend e validação de formulário com Yup e Formik.',
         repository: 'https://github.com/TallysonFreitas/Efood',
         deploy: 'https://efood-three-nu.vercel.app/',
         description:
@@ -89,7 +89,7 @@ const Projetos = () => {
       target: 'webmotors',
       body: {
         tecnologies:
-          'O projeto foi implementado usando a bibliteca React.js, usando tambem usando a linguagem de programacao Typescript, para a criacao de componentes estilizados foi feita com Styled-components e para a centralizacao das informacoes foi usado o Redux.js',
+          'WebMotors é um projeto no qual é facilitado a análise doo veículo pelo comprador, por meio de selos como o de super preço, comparação entre valores médio, tabela Fipe e a média anunciada no site, possui sistema de favoritos e de busca de veículos para encontrar e salvar os carros mais desejados. WebMotors possui design responsivo, sistema de buscas e formulário para contato, foi desenvolvido com React.js na criação dos componentes, React-Router-DOM na navegação, Typescript como linguagem padrão, Styled-components na estilização, Redux na centralização das informações para busca e favoritos e na implementação de informações vindas foi utilizada a função Fetch em um arquivo JSON.',
         repository: 'https://github.com/TallysonFreitas/webmotors',
         deploy: 'https://webmotors-clone.vercel.app/',
         description:
